@@ -1,4 +1,4 @@
-import { Bed, Bath, Maximize2, MessageCircle } from "lucide-react";
+import { Bed, Maximize2, MessageCircle } from "lucide-react";
 import { condominiumData } from "@/lib/data";
 
 export default function Units() {
@@ -52,10 +52,7 @@ export default function Units() {
                   <Bed size={20} className="text-primary" />
                   <span>{unit.bedrooms} quartos</span>
                 </div>
-                <div className="flex items-center gap-3 text-foreground">
-                  <Bath size={20} className="text-primary" />
-                  <span>{unit.bathrooms} banheiros</span>
-                </div>
+
               </div>
 
               <div className="border-t border-border pt-4">
