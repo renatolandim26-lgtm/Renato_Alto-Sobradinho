@@ -101,7 +101,7 @@ export const condominiumData = {
     },
     {
       id: 3,
-      name: "Total Ville",
+      name: "Total Ville Planaltina",
       location: "Planaltina, DF",
       developer: "",
       status: "",
@@ -110,7 +110,7 @@ export const condominiumData = {
     },
     {
       id: 4,
-      name: "Recanto dos Sabiás",
+      name: "Recanto dos Pássaros",
       location: "Recanto das Emas, DF",
       developer: "",
       status: "",
