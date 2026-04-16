@@ -23,8 +23,8 @@ export default function Header() {
             <a href="#plantas" className="text-foreground hover:text-primary transition-smooth">
               Plantas
             </a>
-            <a href="#pontos" className="text-foreground hover:text-primary transition-smooth">
-              Pontos de Interesse
+            <a href="#localizacao" className="text-foreground hover:text-primary transition-smooth">
+              Localização
             </a>
             <a href="#empreendimentos" className="text-foreground hover:text-primary transition-smooth">
               Empreendimentos
@@ -60,8 +60,8 @@ export default function Header() {
             <a href="#plantas" className="block py-3 px-2 text-foreground hover:text-primary hover:bg-secondary/5 rounded transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Plantas
             </a>
-            <a href="#pontos" className="block py-3 px-2 text-foreground hover:text-primary hover:bg-secondary/5 rounded transition-colors" onClick={() => setMobileMenuOpen(false)}>
-              Pontos de Interesse
+            <a href="#localizacao" className="block py-3 px-2 text-foreground hover:text-primary hover:bg-secondary/5 rounded transition-colors" onClick={() => setMobileMenuOpen(false)}>
+              Localização
             </a>
             <a href="#empreendimentos" className="block py-3 px-2 text-foreground hover:text-primary hover:bg-secondary/5 rounded transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Empreendimentos
