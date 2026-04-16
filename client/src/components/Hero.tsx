@@ -7,7 +7,7 @@ export default function Hero() {
 
   const slides = [
     {
-      title: "Alto Sobradinho",
+      title: "Destino Vida e Lar",
       subtitle: "",
       description: "Descubra o lifestyle sofisticado no Alto Sobradinho. Um empreendimento único que combina arquitetura contemporânea com áreas de lazer completas e localização privilegiada.",
       image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663388046529/4hbgRFMku9Ni9M9aw75Dyf/hero-alto-sobradinho-VckTpUB7mK2Sj6XG8ckVgU.webp"
