@@ -2,8 +2,8 @@ import { ParkingCircle, Maximize2, MessageCircle, Trees } from "lucide-react";
 import { condominiumData } from "@/lib/data";
 
 export default function Units() {
-  const whatsappNumber = "5561999886578";
-  const whatsappUrl = `https://wa.me/${whatsappNumber}`;
+  const { contact } = condominiumData;
+  const whatsappUrl = `https://wa.me/${contact.main.phone}?text=${encodeURIComponent(contact.main.defaultMessage)}`;
 
   return (
     <section id="plantas" className="py-20 bg-white">
@@ -65,7 +65,7 @@ export default function Units() {
 
               <div className="border-t border-border pt-4">
                 <a
-                  href={whatsappUrl}
+                  href={`${whatsappUrl} (Interesse na unidade: ${unit.name})`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full px-4 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg font-semibold transition-all"

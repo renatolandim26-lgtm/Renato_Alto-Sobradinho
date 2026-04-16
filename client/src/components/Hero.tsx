@@ -1,9 +1,12 @@
-import { ArrowDown, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowDown, ChevronLeft, ChevronRight, MessageCircle } from "lucide-react";
 import { condominiumData } from "@/lib/data";
 import { useState, useEffect } from "react";
 
 export default function Hero() {
+  const { contact } = condominiumData;
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const whatsappUrl = `https://wa.me/${contact.main.phone}?text=${encodeURIComponent(contact.main.defaultMessage)}`;
 
   const slides = [
     {
@@ -85,10 +88,19 @@ export default function Hero() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <a
-            href="#sobre"
-            className="px-8 py-4 bg-white/20 hover:bg-white/30 text-white rounded-lg font-semibold transition-smooth border border-white/50"
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 bg-primary hover:bg-primary/90 text-white rounded-lg font-bold transition-all shadow-lg shadow-primary/20 flex items-center justify-center gap-2"
           >
-            Saiba Mais
+            <MessageCircle size={20} />
+            Solicitar Informações
+          </a>
+          <a
+            href="#sobre"
+            className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white rounded-lg font-semibold transition-all border border-white/30 backdrop-blur-sm"
+          >
+            Conhecer o Projeto
           </a>
         </div>
 
@@ -126,7 +138,7 @@ export default function Hero() {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown size={32} className="text-white" />
+          <ArrowDown size={32} className="text-white opacity-50" />
         </div>
       </div>
     </section>
