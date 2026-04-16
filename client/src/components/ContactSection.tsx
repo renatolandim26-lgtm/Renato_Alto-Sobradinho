@@ -33,11 +33,9 @@ export default function ContactSection() {
     }
 
     setIsSubmitting(true);
-    console.log("Iniciando envio para Formspree...", formData);
     
     try {
-      // Usando JSON em vez de FormData para maior compatibilidade com Formspree em alguns contextos
-      const response = await fetch("https://formspree.io/f/xyzwpqab", {
+      const response = await fetch("https://formspree.io/f/mojyejbd", {
         method: "POST",
         body: JSON.stringify(formData),
         headers: {
@@ -47,18 +45,12 @@ export default function ContactSection() {
       });
 
       const result = await response.json();
-      console.log("Resposta do Formspree:", response.status, result);
 
       if (response.ok) {
         toast.success("Cadastro realizado com sucesso! Entraremos em contato em breve.");
         setFormData({ firstName: "", lastName: "", email: "", phone: "", region: "" });
       } else {
-        // Se o erro for 404, o ID do formulário provavelmente é um placeholder
-        if (response.status === 404) {
-          toast.error("Erro de configuração: O ID do formulário (xyzwpqab) parece ser inválido ou um placeholder.");
-        } else {
-          toast.error(result.error || "Erro ao enviar o formulário. Tente novamente.");
-        }
+        toast.error(result.error || "Erro ao enviar o formulário. Tente novamente.");
       }
     } catch (error) {
       console.error("Erro na requisição:", error);
