@@ -128,7 +128,7 @@ export default function ContactSection() {
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-10 border border-primary/5">
               <div className="mb-8">
                 <h3 className="text-2xl font-bold text-foreground mb-2">Solicitar Informações</h3>
-                <p className="text-muted-foreground">Preencha os campos abaixo e receba o material completo do empreendimento.</p>
+                <p className="text-muted-foreground">Preencha os campos abaixo e receba um atendimento único e personalizado sobre o empreendimento.</p>
               </div>
               
               <form onSubmit={handleSubmit} className="space-y-6">
