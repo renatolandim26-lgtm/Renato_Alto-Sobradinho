@@ -1,4 +1,4 @@
-import { Instagram } from "lucide-react";
+import { Instagram, Facebook } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -16,15 +16,26 @@ export default function Footer() {
           {/* Redes Sociais */}
           <div>
             <h4 className="font-bold mb-4">Redes Sociais</h4>
-            <a
-              href="https://instagram.com/MAGNOS_EMPREENDIMENTOS"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sidebar-foreground/80 hover:text-white transition-colors"
-            >
-              <Instagram size={20} />
-              @MAGNOS_EMPREENDIMENTOS
-            </a>
+            <div className="space-y-3">
+              <a
+                href="https://instagram.com/MAGNOS_EMPREENDIMENTOS"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sidebar-foreground/80 hover:text-white transition-colors"
+              >
+                <Instagram size={20} />
+                @MAGNOS_EMPREENDIMENTOS
+              </a>
+              <a
+                href="https://www.facebook.com/share/17tySGHbdD/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sidebar-foreground/80 hover:text-white transition-colors"
+              >
+                <Facebook size={20} />
+                Facebook
+              </a>
+            </div>
           </div>
 
           {/* Copyright */}
