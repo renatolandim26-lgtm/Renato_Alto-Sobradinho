@@ -21,11 +21,33 @@ export default function ContactSection() {
     "Planaltina"
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Formulário enviado:", formData);
-    // Aqui você pode adicionar a lógica para enviar os dados
-    setFormData({ firstName: "", lastName: "", email: "", phone: "", region: "" });
+    
+    try {
+      const response = await fetch("https://formspree.io/renatolandim26@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: `${formData.firstName} ${formData.lastName}`,
+          email: formData.email,
+          phone: formData.phone,
+          region: formData.region,
+        }),
+      });
+
+      if (response.ok) {
+        alert("Cadastro realizado com sucesso! Entraremos em contato em breve.");
+        setFormData({ firstName: "", lastName: "", email: "", phone: "", region: "" });
+      } else {
+        alert("Erro ao enviar o formulário. Tente novamente.");
+      }
+    } catch (error) {
+      console.error("Erro:", error);
+      alert("Erro ao enviar o formulário. Tente novamente.");
+    }
   };
 
   return (
