@@ -40,7 +40,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="text-sm text-sidebar-foreground/60">
-            <p>© 2026 Alto da Alvorada. Todos os direitos reservados.</p>
+            <p>© 2026 Sólidus. Todos os direitos reservados.</p>
           </div>
         </div>
       </div>
