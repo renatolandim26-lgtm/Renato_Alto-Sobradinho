@@ -18,8 +18,8 @@ export default function InterestMap() {
           <img
             src="/images/mapa-localizacao.png"
             alt="Mapa ilustrativo da localização do condomínio"
-            className="w-full h-auto object-cover"
-            style={{ maxHeight: "500px" }}
+            className="w-full h-auto object-contain"
+            style={{ maxHeight: "600px", width: "100%" }}
           />
         </div>
       </div>
