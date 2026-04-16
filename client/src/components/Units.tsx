@@ -1,7 +1,10 @@
-import { Bed, Bath, Maximize2 } from "lucide-react";
+import { Bed, Bath, Maximize2, MessageCircle } from "lucide-react";
 import { condominiumData } from "@/lib/data";
 
 export default function Units() {
+  const whatsappNumber = "5561999886578";
+  const whatsappUrl = `https://wa.me/${whatsappNumber}`;
+
   return (
     <section id="plantas" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -56,9 +59,15 @@ export default function Units() {
               </div>
 
               <div className="border-t border-border pt-4">
-                <button className="btn-primary w-full">
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full px-4 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg font-semibold transition-all"
+                >
+                  <MessageCircle size={18} />
                   Solicitar Informações
-                </button>
+                </a>
               </div>
             </div>
           ))}
