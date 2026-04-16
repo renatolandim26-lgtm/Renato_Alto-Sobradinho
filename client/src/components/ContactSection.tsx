@@ -27,39 +27,42 @@ export default function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Validação básica da região
     if (!formData.region) {
       toast.error("Por favor, selecione uma região de interesse.");
       return;
     }
 
     setIsSubmitting(true);
+    console.log("Iniciando envio para Formspree...", formData);
     
     try {
-      const formPayload = new FormData();
-      formPayload.append("firstName", formData.firstName);
-      formPayload.append("lastName", formData.lastName);
-      formPayload.append("email", formData.email);
-      formPayload.append("phone", formData.phone);
-      formPayload.append("region", formData.region);
-
+      // Usando JSON em vez de FormData para maior compatibilidade com Formspree em alguns contextos
       const response = await fetch("https://formspree.io/f/xyzwpqab", {
         method: "POST",
-        body: formPayload,
+        body: JSON.stringify(formData),
         headers: {
-          'Accept': 'application/json'
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
         }
       });
+
+      const result = await response.json();
+      console.log("Resposta do Formspree:", response.status, result);
 
       if (response.ok) {
         toast.success("Cadastro realizado com sucesso! Entraremos em contato em breve.");
         setFormData({ firstName: "", lastName: "", email: "", phone: "", region: "" });
       } else {
-        toast.error("Erro ao enviar o formulário. Tente novamente.");
+        // Se o erro for 404, o ID do formulário provavelmente é um placeholder
+        if (response.status === 404) {
+          toast.error("Erro de configuração: O ID do formulário (xyzwpqab) parece ser inválido ou um placeholder.");
+        } else {
+          toast.error(result.error || "Erro ao enviar o formulário. Tente novamente.");
+        }
       }
     } catch (error) {
-      console.error("Erro:", error);
-      toast.error("Erro ao enviar o formulário. Verifique sua conexão.");
+      console.error("Erro na requisição:", error);
+      toast.error("Erro de conexão ao enviar o formulário.");
     } finally {
       setIsSubmitting(false);
     }
