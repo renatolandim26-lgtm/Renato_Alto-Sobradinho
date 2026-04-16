@@ -23,7 +23,9 @@ export default function ContactSection() {
     "Sobradinho",
     "Águas Claras",
     "Recanto das Emas",
-    "Planaltina"
+    "Planaltina",
+    "Santa Maria",
+    "Valparaíso de Goiás"
   ];
 
   const whatsappUrl = `https://wa.me/${contact.main.phone}?text=${encodeURIComponent(contact.main.defaultMessage)}`;
