@@ -13,6 +13,8 @@ export default function ContactSection() {
     region: ""
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const regions = [
     "Samambaia",
     "Sobradinho",
@@ -23,19 +25,19 @@ export default function ContactSection() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
     try {
-      const response = await fetch("https://formspree.io/renatolandim26@gmail.com", {
+      const formPayload = new FormData();
+      formPayload.append("firstName", formData.firstName);
+      formPayload.append("lastName", formData.lastName);
+      formPayload.append("email", formData.email);
+      formPayload.append("phone", formData.phone);
+      formPayload.append("region", formData.region);
+
+      const response = await fetch("https://formspree.io/f/xyzwpqab", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: `${formData.firstName} ${formData.lastName}`,
-          email: formData.email,
-          phone: formData.phone,
-          region: formData.region,
-        }),
+        body: formPayload,
       });
 
       if (response.ok) {
@@ -47,6 +49,8 @@ export default function ContactSection() {
     } catch (error) {
       console.error("Erro:", error);
       alert("Erro ao enviar o formulário. Tente novamente.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -170,9 +174,10 @@ export default function ContactSection() {
 
                 <Button
                   type="submit"
+                  disabled={isSubmitting}
                   className="w-full bg-primary hover:opacity-90 text-white py-2 rounded-lg transition-smooth"
                 >
-                  Cadastrar
+                  {isSubmitting ? "Enviando..." : "Cadastrar"}
                 </Button>
               </form>
             </div>
