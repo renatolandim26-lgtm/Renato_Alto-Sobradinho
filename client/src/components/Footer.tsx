@@ -24,7 +24,7 @@ export default function Footer() {
                 className="flex items-center gap-2 text-sidebar-foreground/80 hover:text-white transition-colors"
               >
                 <Instagram size={20} />
-                @MAGNOS_EMPREENDIMENTOS
+                Instagram profissional
               </a>
               <a
                 href="https://www.facebook.com/share/17tySGHbdD/"
@@ -33,7 +33,7 @@ export default function Footer() {
                 className="flex items-center gap-2 text-sidebar-foreground/80 hover:text-white transition-colors"
               >
                 <Facebook size={20} />
-                Facebook
+                Página de vendas
               </a>
             </div>
           </div>
