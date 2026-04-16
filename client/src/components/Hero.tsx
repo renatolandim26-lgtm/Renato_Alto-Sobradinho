@@ -13,6 +13,12 @@ export default function Hero() {
       image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663388046529/4hbgRFMku9Ni9M9aw75Dyf/hero-alto-sobradinho-VckTpUB7mK2Sj6XG8ckVgU.webp"
     },
     {
+      title: "Alto da Aurora",
+      subtitle: "",
+      description: "Terceiro condomínio do nosso complexo",
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663388046529/4hbgRFMku9Ni9M9aw75Dyf/hero-alto-alvorada-56Mo86NuinkctM6cN3wVkX.webp"
+    },
+    {
       title: condominiumData.main.name,
       subtitle: "",
       description: "Segundo condomínio do complexo Alto Sobradinho",
