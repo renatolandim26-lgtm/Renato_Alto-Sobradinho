@@ -1,4 +1,4 @@
-import { Bed, Maximize2, MessageCircle } from "lucide-react";
+import { ParkingCircle, Maximize2, MessageCircle } from "lucide-react";
 import { condominiumData } from "@/lib/data";
 
 export default function Units() {
@@ -49,8 +49,12 @@ export default function Units() {
                   <span>{unit.area}</span>
                 </div>
                 <div className="flex items-center gap-3 text-foreground">
-                  <Bed size={20} className="text-primary" />
-                  <span>{unit.bedrooms} quartos</span>
+                  <ParkingCircle size={20} className="text-primary" />
+                  <span>
+                    {unit.name === "2 Quartos" && "1 garagem vinculada"}
+                    {unit.name === "3 Quartos" && "2 garagens vinculadas"}
+                    {unit.name === "Cobertura" && "2 garagens vinculadas"}
+                  </span>
                 </div>
 
               </div>
