@@ -16,7 +16,7 @@ export default function Gallery() {
           </p>
         </div>
 
-        {/* Gallery Grid - Focado em Apresentação */}
+        {/* Gallery Grid - Puramente Visual */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {gallery.map((item, index) => (
             <div
@@ -25,15 +25,9 @@ export default function Gallery() {
             >
               <img
                 src={item.image}
-                alt={item.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                alt={item.title || "Imagem do empreendimento"}
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
-              <div className="absolute bottom-0 left-0 w-full p-6">
-                <p className="text-white text-xl font-bold tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
-                  {item.title}
-                </p>
-              </div>
             </div>
           ))}
         </div>
