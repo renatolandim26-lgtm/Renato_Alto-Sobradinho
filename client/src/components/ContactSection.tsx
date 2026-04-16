@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { toast } from "sonner";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -25,6 +26,13 @@ export default function ContactSection() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Validação básica da região
+    if (!formData.region) {
+      toast.error("Por favor, selecione uma região de interesse.");
+      return;
+    }
+
     setIsSubmitting(true);
     
     try {
@@ -38,17 +46,20 @@ export default function ContactSection() {
       const response = await fetch("https://formspree.io/f/xyzwpqab", {
         method: "POST",
         body: formPayload,
+        headers: {
+          'Accept': 'application/json'
+        }
       });
 
       if (response.ok) {
-        alert("Cadastro realizado com sucesso! Entraremos em contato em breve.");
+        toast.success("Cadastro realizado com sucesso! Entraremos em contato em breve.");
         setFormData({ firstName: "", lastName: "", email: "", phone: "", region: "" });
       } else {
-        alert("Erro ao enviar o formulário. Tente novamente.");
+        toast.error("Erro ao enviar o formulário. Tente novamente.");
       }
     } catch (error) {
       console.error("Erro:", error);
-      alert("Erro ao enviar o formulário. Tente novamente.");
+      toast.error("Erro ao enviar o formulário. Verifique sua conexão.");
     } finally {
       setIsSubmitting(false);
     }
