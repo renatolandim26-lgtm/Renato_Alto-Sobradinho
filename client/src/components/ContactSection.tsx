@@ -210,7 +210,7 @@ export default function ContactSection() {
                       <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
                       Enviando Solicitação...
                     </span>
-                  ) : "Receber Material Gratuito"}
+                  ) : "Enviar Dados"}
                 </Button>
                 
                 <p className="text-[10px] text-center text-muted-foreground mt-4">
