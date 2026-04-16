@@ -13,17 +13,6 @@ export default function ContactSection() {
     region: ""
   });
 
-  const consultants = [
-    { name: "Davyd", phone: "5561993707482" },
-    { name: "Nicolas", phone: "5561996244743" },
-    { name: "Renato", phone: "5561999886578" },
-    { name: "Geovane", phone: "5561991033288" },
-    { name: "Elisângela", phone: "5561994120508" },
-    { name: "Mara", phone: "5561992117736" },
-    { name: "Raione", phone: "5561991515712" },
-    { name: "Ana Luiza", phone: "5561999526890" }
-  ];
-
   const regions = [
     "Samambaia",
     "Sobradinho",
@@ -52,30 +41,25 @@ export default function ContactSection() {
         </div>
 
         <div className="flex flex-col gap-12 max-w-6xl mx-auto">
-          {/* Consultores */}
-          <div>
-            <h3 className="text-2xl font-bold mb-6 text-center">Nossos Consultores</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {consultants.map((consultant, idx) => (
-                <div key={idx} className="card-corporate text-center">
-                  <div className="mb-4">
-                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto">
-                      <span className="text-white font-bold text-sm">{consultant.name.charAt(0)}</span>
-                    </div>
-                  </div>
-                  <h3 className="text-lg font-bold mb-2">{consultant.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">Consultor de Imóveis</p>
-                  <a
-                    href={`https://wa.me/${consultant.phone}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-smooth w-full"
-                  >
-                    <MessageCircle size={16} />
-                    WhatsApp
-                  </a>
+          {/* Consultor - Renato Landim */}
+          <div className="flex justify-center">
+            <div className="card-corporate text-center max-w-sm">
+              <div className="mb-4">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto">
+                  <span className="text-white font-bold text-2xl">R</span>
                 </div>
-              ))}
+              </div>
+              <h3 className="text-2xl font-bold mb-2">Renato Landim</h3>
+              <p className="text-base text-muted-foreground mb-6">Consultor de Imóveis</p>
+              <a
+                href="https://wa.me/5561999886578"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-smooth w-full font-semibold"
+              >
+                <MessageCircle size={20} />
+                WhatsApp
+              </a>
             </div>
           </div>
 
