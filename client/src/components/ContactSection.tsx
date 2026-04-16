@@ -8,7 +8,8 @@ export default function ContactSection() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    contact: "",
+    email: "",
+    phone: "",
     region: ""
   });
 
@@ -35,7 +36,7 @@ export default function ContactSection() {
     e.preventDefault();
     console.log("Formulário enviado:", formData);
     // Aqui você pode adicionar a lógica para enviar os dados
-    setFormData({ firstName: "", lastName: "", contact: "", region: "" });
+    setFormData({ firstName: "", lastName: "", email: "", phone: "", region: "" });
   };
 
   return (
@@ -83,46 +84,64 @@ export default function ContactSection() {
             <h3 className="text-2xl font-bold mb-6 text-center">Cadastre-se</h3>
             <div className="card-corporate p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="block text-sm font-medium mb-2 text-foreground">
-                    Nome
-                  </label>
-                  <Input
-                    type="text"
-                    placeholder="Digite seu nome"
-                    value={formData.firstName}
-                    onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                    required
-                    className="w-full"
-                  />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-sm font-medium mb-2 text-foreground">
+                      Nome
+                    </label>
+                    <Input
+                      type="text"
+                      placeholder="Digite seu nome"
+                      value={formData.firstName}
+                      onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                      required
+                      className="w-full"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium mb-2 text-foreground">
+                      Sobrenome
+                    </label>
+                    <Input
+                      type="text"
+                      placeholder="Digite seu sobrenome"
+                      value={formData.lastName}
+                      onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                      required
+                      className="w-full"
+                    />
+                  </div>
                 </div>
 
-                <div>
-                  <label className="block text-sm font-medium mb-2 text-foreground">
-                    Sobrenome
-                  </label>
-                  <Input
-                    type="text"
-                    placeholder="Digite seu sobrenome"
-                    value={formData.lastName}
-                    onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                    required
-                    className="w-full"
-                  />
-                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-sm font-medium mb-2 text-foreground">
+                      E-mail
+                    </label>
+                    <Input
+                      type="email"
+                      placeholder="seu@email.com"
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      required
+                      className="w-full"
+                    />
+                  </div>
 
-                <div>
-                  <label className="block text-sm font-medium mb-2 text-foreground">
-                    Contato (Telefone ou Email)
-                  </label>
-                  <Input
-                    type="text"
-                    placeholder="(61) 9 9999-9999 ou seu@email.com"
-                    value={formData.contact}
-                    onChange={(e) => setFormData({ ...formData, contact: e.target.value })}
-                    required
-                    className="w-full"
-                  />
+                  <div>
+                    <label className="block text-sm font-medium mb-2 text-foreground">
+                      Telefone
+                    </label>
+                    <Input
+                      type="tel"
+                      placeholder="(61) 9 9999-9999"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      required
+                      className="w-full"
+                    />
+                  </div>
                 </div>
 
                 <div>
