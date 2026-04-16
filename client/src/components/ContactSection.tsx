@@ -25,7 +25,9 @@ export default function ContactSection() {
     "Recanto das Emas",
     "Planaltina",
     "Santa Maria",
-    "Valparaíso de Goiás"
+    "Valparaíso de Goiás",
+    "Ceilândia",
+    "Taguatinga"
   ];
 
   const whatsappUrl = `https://wa.me/${contact.main.phone}?text=${encodeURIComponent(contact.main.defaultMessage)}`;
