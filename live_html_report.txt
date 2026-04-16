@@ -1,0 +1,27 @@
+TITLE: Alto da Alvorada - Condomínio de Luxo
+META description: <missing>
+META keywords: <missing>
+META robots: <missing>
+META viewport: width=device-width, initial-scale=1.0, maximum-scale=1
+CANONICAL: <missing>
+LANG: en
+H1 COUNT: 1
+H2 COUNT: 6
+IMG COUNT: 8
+IMAGES MISSING ALT: 0
+ANCHOR COUNT: 14
+A: Sobre -> #sobre
+A: Lazer -> #amenidades
+A: Plantas -> #plantas
+A: Galeria -> #galeria
+A: Empreendimentos -> #empreendimentos
+A: Contato -> #contato
+A: Solicitar Informações -> https://wa.me/5561999886578?text=Ol%C3%A1%20Renato!%20Vi%20o%20site%20do%20Magnos%20e%20tenho%20interesse%20em%20conhecer%20o%20im%C3%B3vel.%20Pode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F
+A: Conhecer o Projeto -> #sobre
+A: Solicitar Informações -> https://wa.me/5561999886578?text=Ol%C3%A1%20Renato!%20Vi%20o%20site%20do%20Magnos%20e%20tenho%20interesse%20em%20conhecer%20o%20im%C3%B3vel.%20Pode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F (Interesse na unidade: 2 Quartos)
+A: Solicitar Informações -> https://wa.me/5561999886578?text=Ol%C3%A1%20Renato!%20Vi%20o%20site%20do%20Magnos%20e%20tenho%20interesse%20em%20conhecer%20o%20im%C3%B3vel.%20Pode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F (Interesse na unidade: 3 Quartos)
+A: Solicitar Informações -> https://wa.me/5561999886578?text=Ol%C3%A1%20Renato!%20Vi%20o%20site%20do%20Magnos%20e%20tenho%20interesse%20em%20conhecer%20o%20im%C3%B3vel.%20Pode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F (Interesse na unidade: Cobertura)
+A: Conversar no WhatsApp -> https://wa.me/5561999886578?text=Ol%C3%A1%20Renato!%20Vi%20o%20site%20do%20Magnos%20e%20tenho%20interesse%20em%20conhecer%20o%20im%C3%B3vel.%20Pode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F
+A: Instagram profissional -> https://instagram.com/MAGNOS_EMPREENDIMENTOS
+A: Página de vendas -> https://www.facebook.com/share/17tySGHbdD/
+JSON-LD COUNT: 0

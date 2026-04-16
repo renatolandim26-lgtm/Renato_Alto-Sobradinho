@@ -1,0 +1,3 @@
+ASSET_COUNT 2
+script	https://magnos-site.vercel.app/assets/index-BdLlOcnN.js	application/javascript; charset=utf-8	?
+link	https://magnos-site.vercel.app/assets/index-UAfnSNGY.css	text/css; charset=utf-8	?

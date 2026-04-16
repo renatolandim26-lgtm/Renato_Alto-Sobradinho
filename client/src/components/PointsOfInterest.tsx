@@ -47,7 +47,7 @@ export default function PointsOfInterest() {
   ];
 
   return (
-    <section id="pontos-interesse" className="py-20 bg-white">
+    <section id="pontos" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "var(--font-display)" }}>

@@ -1,0 +1,35 @@
+--- MAIN PAGE HEADERS ---
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 133
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline
+content-type: text/html; charset=utf-8
+date: Thu, 16 Apr 2026 16:53:31 GMT
+etag: "b9db505deb972cf20a2b85b706c37eaa"
+last-modified: Thu, 16 Apr 2026 16:51:17 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-vercel-cache: HIT
+x-vercel-id: iad1::b4nwb-1776358411484-d8190eea9bb8
+content-length: 367842
+
+
+--- SAMPLE IMAGE HEADERS ---
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 133
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline; filename="planta-2-quartos.jpg"
+content-type: image/jpeg
+date: Thu, 16 Apr 2026 16:53:31 GMT
+etag: "e0784fe49ee3a745ae5d3b2f390c67b8"
+last-modified: Thu, 16 Apr 2026 16:51:18 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-vercel-cache: HIT
+x-vercel-id: iad1::rpbg7-1776358411580-6750400bdafc
+content-length: 294261
+

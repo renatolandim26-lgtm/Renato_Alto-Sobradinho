@@ -14,14 +14,17 @@ export default function Header() {
             <a href="#sobre" className="text-foreground hover:text-primary transition-smooth">
               Sobre
             </a>
+            <a href="#galeria" className="text-foreground hover:text-primary transition-smooth">
+              Galeria
+            </a>
             <a href="#amenidades" className="text-foreground hover:text-primary transition-smooth">
               Lazer
             </a>
             <a href="#plantas" className="text-foreground hover:text-primary transition-smooth">
               Plantas
             </a>
-            <a href="#galeria" className="text-foreground hover:text-primary transition-smooth">
-              Galeria
+            <a href="#pontos" className="text-foreground hover:text-primary transition-smooth">
+              Pontos de Interesse
             </a>
             <a href="#empreendimentos" className="text-foreground hover:text-primary transition-smooth">
               Empreendimentos
@@ -48,14 +51,17 @@ export default function Header() {
             <a href="#sobre" className="block py-2 text-foreground hover:text-primary">
               Sobre
             </a>
+            <a href="#galeria" className="block py-2 text-foreground hover:text-primary">
+              Galeria
+            </a>
             <a href="#amenidades" className="block py-2 text-foreground hover:text-primary">
               Lazer
             </a>
             <a href="#plantas" className="block py-2 text-foreground hover:text-primary">
               Plantas
             </a>
-            <a href="#galeria" className="block py-2 text-foreground hover:text-primary">
-              Galeria
+            <a href="#pontos" className="block py-2 text-foreground hover:text-primary">
+              Pontos de Interesse
             </a>
             <a href="#empreendimentos" className="block py-2 text-foreground hover:text-primary">
               Empreendimentos

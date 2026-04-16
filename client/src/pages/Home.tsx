@@ -1,10 +1,10 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Introduction from "@/components/Introduction";
-import PointsOfInterest from "@/components/PointsOfInterest";
+import Gallery from "@/components/Gallery";
 import Amenities from "@/components/Amenities";
 import Units from "@/components/Units";
-import Gallery from "@/components/Gallery";
+import PointsOfInterest from "@/components/PointsOfInterest";
 import OtherDevelopments from "@/components/OtherDevelopments";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -16,10 +16,10 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <Introduction />
-        <PointsOfInterest />
+        <Gallery />
         <Amenities />
         <Units />
-        <Gallery />
+        <PointsOfInterest />
         <OtherDevelopments />
         <ContactSection />
       </main>
