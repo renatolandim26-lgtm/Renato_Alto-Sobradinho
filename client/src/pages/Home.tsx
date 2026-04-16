@@ -4,7 +4,7 @@ import Introduction from "@/components/Introduction";
 import Gallery from "@/components/Gallery";
 import Amenities from "@/components/Amenities";
 import Units from "@/components/Units";
-import PointsOfInterest from "@/components/PointsOfInterest";
+import InterestMap from "@/components/InterestMap";
 import OtherDevelopments from "@/components/OtherDevelopments";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -19,7 +19,7 @@ export default function Home() {
         <Gallery />
         <Amenities />
         <Units />
-        <PointsOfInterest />
+        <InterestMap />
         <OtherDevelopments />
         <ContactSection />
       </main>
