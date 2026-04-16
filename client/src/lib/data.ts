@@ -134,6 +134,24 @@ export const condominiumData = {
       status: "",
       units: "",
       bedrooms: "2 e 3 quartos"
+    },
+    {
+      id: 7,
+      name: "Total Ville Ikeda",
+      location: "Ceilândia, DF",
+      developer: "",
+      status: "",
+      units: "Apartamentos",
+      bedrooms: "2 e 3 quartos"
+    },
+    {
+      id: 8,
+      name: "Total Ville Conviver",
+      location: "Santa Maria, DF",
+      developer: "",
+      status: "",
+      units: "Apartamentos",
+      bedrooms: "2 e 3 quartos"
     }
   ],
   contact: {
