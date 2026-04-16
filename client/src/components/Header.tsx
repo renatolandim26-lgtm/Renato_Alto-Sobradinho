@@ -38,7 +38,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 absolute right-4"
+            className="md:hidden p-2 absolute right-4 active:scale-90 transition-transform"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -47,26 +47,26 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="md:hidden pb-4 border-t border-border">
-            <a href="#sobre" className="block py-2 text-foreground hover:text-primary">
+          <nav className="md:hidden pb-4 border-t border-border space-y-1">
+            <a href="#sobre" className="block py-3 px-2 text-foreground hover:text-primary hover:bg-secondary/5 rounded transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Sobre
             </a>
-            <a href="#galeria" className="block py-2 text-foreground hover:text-primary">
+            <a href="#galeria" className="block py-3 px-2 text-foreground hover:text-primary hover:bg-secondary/5 rounded transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Galeria
             </a>
-            <a href="#amenidades" className="block py-2 text-foreground hover:text-primary">
+            <a href="#amenidades" className="block py-3 px-2 text-foreground hover:text-primary hover:bg-secondary/5 rounded transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Lazer
             </a>
-            <a href="#plantas" className="block py-2 text-foreground hover:text-primary">
+            <a href="#plantas" className="block py-3 px-2 text-foreground hover:text-primary hover:bg-secondary/5 rounded transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Plantas
             </a>
-            <a href="#pontos" className="block py-2 text-foreground hover:text-primary">
+            <a href="#pontos" className="block py-3 px-2 text-foreground hover:text-primary hover:bg-secondary/5 rounded transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Pontos de Interesse
             </a>
-            <a href="#empreendimentos" className="block py-2 text-foreground hover:text-primary">
+            <a href="#empreendimentos" className="block py-3 px-2 text-foreground hover:text-primary hover:bg-secondary/5 rounded transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Empreendimentos
             </a>
-            <a href="#contato" className="block py-2 text-foreground hover:text-primary">
+            <a href="#contato" className="block py-3 px-2 text-foreground hover:text-primary hover:bg-secondary/5 rounded transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Contato
             </a>
           </nav>

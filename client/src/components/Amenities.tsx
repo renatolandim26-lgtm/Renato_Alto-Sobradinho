@@ -1,3 +1,4 @@
+import React from "react";
 import { 
   Waves, 
   Dumbbell, 
@@ -25,28 +26,28 @@ export default function Amenities() {
   return (
     <section id="amenidades" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "var(--font-display)" }}>
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "var(--font-display)" }}>
             Área de Lazer Completa
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
             Desfrute de uma vida com qualidade, segurança e conforto em um ambiente pensado para você e sua família
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
           {condominiumData.main.amenities.map((amenity, index) => (
             <div
               key={index}
               className="card-corporate text-center hover:shadow-lg transform hover:scale-105 transition-all duration-300"
             >
-              <div className="flex justify-center mb-4 text-primary">
+              <div className="flex justify-center mb-3 text-primary">
                 {iconMap[amenity.icon]}
               </div>
-              <h3 className="text-xl font-bold mb-2 text-foreground">
+              <h3 className="text-lg sm:text-xl font-bold mb-2 text-foreground">
                 {amenity.title}
               </h3>
-              <p className="text-muted-foreground text-sm whitespace-pre-line">
+              <p className="text-muted-foreground text-xs sm:text-sm whitespace-pre-line">
                 {amenity.description}
               </p>
             </div>
@@ -54,7 +55,7 @@ export default function Amenities() {
         </div>
 
         {/* Divider */}
-        <div className="my-16 h-1 bg-gradient-to-r from-transparent via-border to-transparent"></div>
+        <div className="my-12 sm:my-16 h-1 bg-gradient-to-r from-transparent via-border to-transparent"></div>
       </div>
     </section>
   );

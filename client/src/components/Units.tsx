@@ -8,16 +8,16 @@ export default function Units() {
   return (
     <section id="plantas" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "var(--font-display)" }}>
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "var(--font-display)" }}>
             Plantas e Unidades
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
             Escolha entre diferentes opções de plantas que se adaptam ao seu estilo de vida
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {condominiumData.main.units.map((unit) => (
             <div
               key={unit.id}
@@ -39,17 +39,17 @@ export default function Units() {
                 )}
               </div>
 
-              <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: "var(--font-display)" }}>
+              <h3 className="text-xl sm:text-2xl font-bold mb-4" style={{ fontFamily: "var(--font-display)" }}>
                 {unit.name}
               </h3>
 
-              <div className="space-y-3 mb-6">
+              <div className="space-y-2 sm:space-y-3 mb-6 text-sm sm:text-base">
                 <div className="flex items-center gap-3 text-foreground">
-                  <Maximize2 size={20} className="text-primary" />
+                  <Maximize2 size={18} className="text-primary flex-shrink-0" />
                   <span>{unit.area}</span>
                 </div>
                 <div className="flex items-center gap-3 text-foreground">
-                  <ParkingCircle size={20} className="text-primary" />
+                  <ParkingCircle size={18} className="text-primary flex-shrink-0" />
                   <span>
                     {unit.name === "2 Quartos" && "1 garagem vinculada"}
                     {unit.name === "3 Quartos" && "2 garagens vinculadas"}
@@ -57,7 +57,7 @@ export default function Units() {
                   </span>
                 </div>
                 <div className="flex items-center gap-3 text-foreground">
-                  <Trees size={20} className="text-primary" />
+                  <Trees size={18} className="text-primary flex-shrink-0" />
                   <span>Suíte e {unit.name === "Cobertura" ? "Área Privativa" : "Garden"}</span>
                 </div>
 
@@ -68,9 +68,9 @@ export default function Units() {
                   href={`${whatsappUrl} (Interesse na unidade: ${unit.name})`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full px-4 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg font-semibold transition-all"
+                  className="flex items-center justify-center gap-2 w-full px-4 py-2 sm:py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg font-semibold transition-all text-sm sm:text-base active:scale-95"
                 >
-                  <MessageCircle size={18} />
+                  <MessageCircle size={16} />
                   Solicitar Informações
                 </a>
               </div>
