@@ -1,8 +1,8 @@
 export const condominiumData = {
   main: {
-    name: "Alto da Alvorada",
-    subtitle: "Condomínio de Luxo",
-    description: "Descubra o lifestyle sofisticado no Alto da Alvorada. Um empreendimento único que combina arquitetura contemporânea com áreas de lazer completas e localização privilegiada.",
+    name: "Alto Sobradinho",
+    subtitle: "Complexo de Luxo",
+    description: "Descubra o lifestyle sofisticado no Alto Sobradinho. Um empreendimento único que combina arquitetura contemporânea com áreas de lazer completas e localização privilegiada.",
     developer: "",
     group: "",
     location: "Brasília, DF",
