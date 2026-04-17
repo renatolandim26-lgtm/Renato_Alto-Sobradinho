@@ -88,9 +88,7 @@ export default function Hero() {
         {/* CTA Buttons */}
         <div className="flex flex-col gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 px-2 sm:px-0">
           <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contato"
             className="px-6 sm:px-8 py-3 sm:py-4 bg-primary hover:bg-primary/90 text-white rounded-lg font-bold transition-all shadow-lg shadow-primary/20 flex items-center justify-center gap-2 text-sm sm:text-base active:scale-95"
           >
             <MessageCircle size={18} />

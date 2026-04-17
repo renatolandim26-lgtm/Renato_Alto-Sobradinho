@@ -65,10 +65,8 @@ export default function Units() {
 
               <div className="border-t border-border pt-4">
                 <a
-                  href={`${whatsappUrl} (Interesse na unidade: ${unit.name})`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full px-4 py-2 sm:py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg font-semibold transition-all text-sm sm:text-base active:scale-95"
+                  href="#contato"
+                  className="flex items-center justify-center gap-2 w-full px-4 py-2 sm:py-3 bg-primary hover:bg-primary/90 text-white rounded-lg font-semibold transition-all text-sm sm:text-base active:scale-95"
                 >
                   <MessageCircle size={16} />
                   Solicitar Informações
