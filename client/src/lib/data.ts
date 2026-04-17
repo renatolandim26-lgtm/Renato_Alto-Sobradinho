@@ -67,12 +67,12 @@ export const condominiumData = {
       {
         title: "Brinquedoteca",
         description: "Espaço lúdico e seguro para as crianças",
-        icon: "Gamepad2"
+        icon: "Dices"
       },
       {
         title: "Salão de Jogos",
         description: "Diversão garantida para todas as idades",
-        icon: "Dices"
+        icon: "Gamepad2"
       },
       {
         title: "Pet Place",
