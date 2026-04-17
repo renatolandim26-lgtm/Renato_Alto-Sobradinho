@@ -13,25 +13,25 @@ export default function Hero() {
       title: "Alto Sobradinho",
       subtitle: "",
       description: "Destino Vida e Lar",
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663388046529/4hbgRFMku9Ni9M9aw75Dyf/hero-alto-sobradinho-VckTpUB7mK2Sj6XG8ckVgU.webp"
+      image: "/images/hero-alto-sobradinho.jpg"
     },
     {
       title: "Alto da Aurora",
       subtitle: "",
       description: "Terceiro condomínio do nosso complexo",
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663388046529/4hbgRFMku9Ni9M9aw75Dyf/hero-alto-alvorada-56Mo86NuinkctM6cN3wVkX.webp"
+      image: "/images/hero-alto-aurora.jpg"
     },
     {
       title: "Alto da Alvorada",
       subtitle: "",
       description: "Segundo condomínio do complexo Alto Sobradinho",
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663388046529/4hbgRFMku9Ni9M9aw75Dyf/hero-alto-alvorada-56Mo86NuinkctM6cN3wVkX.webp"
+      image: "/images/hero-alto-alvorada.jpg"
     },
     {
       title: "Alto do Horizonte",
       subtitle: "",
       description: "Primeiro condomínio do nosso complexo",
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663388046529/4hbgRFMku9Ni9M9aw75Dyf/hero-alto-horizonte-JmTcvv7zDuRp6nLnjGWwAp.webp"
+      image: "/images/hero-alto-horizonte.jpg"
     }
   ];
 
