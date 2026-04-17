@@ -177,6 +177,22 @@ export const condominiumData = {
     {
       title: "Piscina",
       image: "/images/gallery-1.jpg"
+    },
+    {
+      title: "Playground",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663564301672/YeBunaZOIIkiNjgU.jpg"
+    },
+    {
+      title: "Cozinha Gourmet",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663564301672/BtKajghmRbIWWqiW.jpg"
+    },
+    {
+      title: "Academia Completa",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663564301672/sUROCTIgUKYOwOdb.jpg"
+    },
+    {
+      title: "Salão de Festas",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663564301672/MMdpwVpUCangOzGL.jpg"
     }
   ]
 };
