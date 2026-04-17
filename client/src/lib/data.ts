@@ -11,7 +11,7 @@ export const condominiumData = {
     amenities: [
       {
         title: "Piscina",
-        description: "Piscina adulto: 20m x 7,50 (CxL)\nProfundidade da piscina: 1,30m\n\nPiscina infantil: 7,50m x 4,00m (CxL)\nProfundidade da piscina: 0,60m",
+        description: "Piscina adulto e piscina infantil para o lazer de toda a família",
         icon: "Waves"
       },
       {
