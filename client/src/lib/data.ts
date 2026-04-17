@@ -193,6 +193,14 @@ export const condominiumData = {
     {
       title: "Salão de Festas",
       image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663564301672/MMdpwVpUCangOzGL.jpg"
+    },
+    {
+      title: "Espaço de Lazer",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663565317285/sAPTGCvJhUXCHDKh.jpg"
+    },
+    {
+      title: "Quadra Poliesportiva",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663565317285/NNBwQuRKFmmwTFdC.jpg"
     }
   ]
 };
