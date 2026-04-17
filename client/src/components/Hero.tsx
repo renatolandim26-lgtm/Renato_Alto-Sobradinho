@@ -31,7 +31,7 @@ export default function Hero() {
       title: "Alto do Horizonte",
       subtitle: "",
       description: "Primeiro condomínio do nosso complexo",
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663388046529/4hbgRFMku9Ni9M9aw75Dyf/hero-alto-horizonte-JmTcvv7zDuRp6nLnjGWwAp.webp"
+      image: "/images/alto-do-horizonte-hero.jpg"
     }
   ];
 
