@@ -164,7 +164,7 @@ export default function ContactSection() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-sm font-semibold text-foreground ml-1">E-mail Corporativo</label>
+                    <label className="text-sm font-semibold text-foreground ml-1">E-mail</label>
                     <Input
                       type="email"
                       placeholder="seu@email.com"
