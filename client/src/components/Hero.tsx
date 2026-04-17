@@ -25,7 +25,7 @@ export default function Hero() {
       title: condominiumData.main.name,
       subtitle: "",
       description: "Segundo condomínio do complexo Alto Sobradinho",
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663388046529/4hbgRFMku9Ni9M9aw75Dyf/hero-alto-alvorada-56Mo86NuinkctM6cN3wVkX.webp"
+      image: "/images/alto-da-alvorada-hero.jpg"
     },
     {
       title: "Alto do Horizonte",
