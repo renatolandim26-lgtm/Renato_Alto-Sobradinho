@@ -12,7 +12,7 @@ export default function Gallery() {
           </h2>
           <div className="w-24 h-1 bg-primary/20 mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore a sofisticação e os detalhes pensados para o seu bem-estar no Alto da Alvorada.
+            Explore a sofisticação e os detalhes pensados para o seu bem-estar.
           </p>
         </div>
 
