@@ -62,7 +62,7 @@ export const condominiumData = {
       {
         title: "Fitness Externo",
         description: "Área equipada para exercícios ao ar livre",
-        icon: "Dumbbell"
+        icon: "Zap"
       },
       {
         title: "Brinquedoteca",

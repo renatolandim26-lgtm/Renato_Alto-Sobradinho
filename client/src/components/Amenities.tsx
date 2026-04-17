@@ -12,7 +12,8 @@ import {
   WashingMachine,
   Gamepad2,
   Dices,
-  Dog
+  Dog,
+  Zap
 } from "lucide-react";
 import { condominiumData } from "@/lib/data";
 
@@ -29,7 +30,8 @@ const iconMap: Record<string, React.ReactNode> = {
   WashingMachine: <WashingMachine size={32} />,
   Gamepad2: <Gamepad2 size={32} />,
   Dices: <Dices size={32} />,
-  Dog: <Dog size={32} />
+  Dog: <Dog size={32} />,
+  Zap: <Zap size={32} />
 };
 
 export default function Amenities() {
