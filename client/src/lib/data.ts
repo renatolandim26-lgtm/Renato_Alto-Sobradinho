@@ -48,6 +48,16 @@ export const condominiumData = {
         title: "Segurança 24h",
         description: "Portaria e monitoramento contínuo",
         icon: "Shield"
+      },
+      {
+        title: "Minimercado",
+        description: "Conveniência e praticidade dentro do condomínio",
+        icon: "ShoppingCart"
+      },
+      {
+        title: "Lavanderia Compartilhada",
+        description: "Espaço moderno e equipado para maior comodidade",
+        icon: "WashingMachine"
       }
     ],
     units: [

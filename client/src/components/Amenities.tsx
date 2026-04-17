@@ -7,7 +7,9 @@ import {
   Smile, 
   Bike, 
   Flame, 
-  Shield 
+  Shield,
+  ShoppingCart,
+  WashingMachine
 } from "lucide-react";
 import { condominiumData } from "@/lib/data";
 
@@ -19,7 +21,9 @@ const iconMap: Record<string, React.ReactNode> = {
   Smile: <Smile size={32} />,
   Bike: <Bike size={32} />,
   Flame: <Flame size={32} />,
-  Shield: <Shield size={32} />
+  Shield: <Shield size={32} />,
+  ShoppingCart: <ShoppingCart size={32} />,
+  WashingMachine: <WashingMachine size={32} />
 };
 
 export default function Amenities() {
@@ -28,7 +32,7 @@ export default function Amenities() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "var(--font-display)" }}>
-            Área de Lazer Completa
+            Área de Lazer e Comodidade
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
             Desfrute de uma vida com qualidade, segurança e conforto em um ambiente pensado para você e sua família
