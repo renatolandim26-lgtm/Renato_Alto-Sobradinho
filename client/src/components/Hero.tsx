@@ -16,7 +16,7 @@ export default function Hero() {
       image: "/images/hero-alto-sobradinho.jpg"
     },
     {
-      title: "Alto da Aurora",
+      title: "Alto da Alvorada",
       subtitle: "",
       description: "Terceiro condomínio do nosso complexo",
       image: "/images/alto-da-aurora-hero.jpg"
