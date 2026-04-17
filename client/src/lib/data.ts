@@ -201,6 +201,10 @@ export const condominiumData = {
     {
       title: "Quadra Poliesportiva",
       image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663565317285/NNBwQuRKFmmwTFdC.jpg"
+    },
+    {
+      title: "Bike Share",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663565317285/OqzbFEqBfNAKmfsT.jpg"
     }
   ]
 };
