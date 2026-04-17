@@ -209,6 +209,10 @@ export const condominiumData = {
     {
       title: "Pet Place",
       image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663565317285/zpcxRHnSJIcKdPmt.jpg"
+    },
+    {
+      title: "Área de Calistenia",
+      image: "/images/gallery-2.jpg"
     }
   ]
 };
