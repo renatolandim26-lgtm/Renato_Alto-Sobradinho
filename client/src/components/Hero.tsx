@@ -13,7 +13,7 @@ export default function Hero() {
       title: "Alto Sobradinho",
       subtitle: "",
       description: "Destino Vida e Lar",
-      image: "/images/hero-alto-sobradinho.jpg"
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663388046529/4hbgRFMku9Ni9M9aw75Dyf/hero-alto-sobradinho-VckTpUB7mK2Sj6XG8ckVgU.webp"
     },
     {
       title: "Alto da Aurora",
