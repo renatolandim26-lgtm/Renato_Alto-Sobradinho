@@ -58,6 +58,26 @@ export const condominiumData = {
         title: "Lavanderia Compartilhada",
         description: "Espaço moderno e equipado para maior comodidade",
         icon: "WashingMachine"
+      },
+      {
+        title: "Fitness Externo",
+        description: "Área equipada para exercícios ao ar livre",
+        icon: "Dumbbell"
+      },
+      {
+        title: "Brinquedoteca",
+        description: "Espaço lúdico e seguro para as crianças",
+        icon: "Gamepad2"
+      },
+      {
+        title: "Salão de Jogos",
+        description: "Diversão garantida para todas as idades",
+        icon: "Dices"
+      },
+      {
+        title: "Pet Place",
+        description: "Espaço exclusivo para o lazer do seu pet",
+        icon: "Dog"
       }
     ],
     units: [

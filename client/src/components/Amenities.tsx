@@ -9,7 +9,10 @@ import {
   Flame, 
   Shield,
   ShoppingCart,
-  WashingMachine
+  WashingMachine,
+  Gamepad2,
+  Dices,
+  Dog
 } from "lucide-react";
 import { condominiumData } from "@/lib/data";
 
@@ -23,7 +26,10 @@ const iconMap: Record<string, React.ReactNode> = {
   Flame: <Flame size={32} />,
   Shield: <Shield size={32} />,
   ShoppingCart: <ShoppingCart size={32} />,
-  WashingMachine: <WashingMachine size={32} />
+  WashingMachine: <WashingMachine size={32} />,
+  Gamepad2: <Gamepad2 size={32} />,
+  Dices: <Dices size={32} />,
+  Dog: <Dog size={32} />
 };
 
 export default function Amenities() {
