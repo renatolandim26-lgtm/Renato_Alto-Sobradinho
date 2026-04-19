@@ -127,7 +127,8 @@ export const condominiumData = {
       developer: "",
       status: "",
       units: "48.76m² até 54.34m²",
-      bedrooms: "2 quartos"
+      bedrooms: "2 quartos",
+      image: "/images/singulare.png"
     },
     {
       id: 3,
