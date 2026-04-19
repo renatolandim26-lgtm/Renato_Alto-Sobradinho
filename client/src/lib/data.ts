@@ -145,7 +145,8 @@ export const condominiumData = {
       developer: "",
       status: "",
       units: "34m² até 35m²",
-      bedrooms: "1 e 2 quartos"
+      bedrooms: "1 e 2 quartos",
+      image: "/images/recanto-dos-passaros.jpg"
     },
     {
       id: 5,
