@@ -118,7 +118,8 @@ export const condominiumData = {
       developer: "",
       status: "",
       units: "50.50m² até 62.83m²",
-      bedrooms: "2 e 3 quartos"
+      bedrooms: "2 e 3 quartos",
+      image: "/images/lumi.jpg"
     },
     {
       id: 2,
