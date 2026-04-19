@@ -24,7 +24,7 @@ export default function Footer() {
                 className="flex items-center gap-2 text-sidebar-foreground/80 hover:text-white transition-colors"
               >
                 <Instagram size={20} />
-                Instagram profissional
+                @solidusempreendimentos
               </a>
               <a
                 href="https://www.facebook.com/share/17tySGHbdD/"
@@ -33,7 +33,7 @@ export default function Footer() {
                 className="flex items-center gap-2 text-sidebar-foreground/80 hover:text-white transition-colors"
               >
                 <Facebook size={20} />
-                Página de vendas
+                Solidus Imóveis DF
               </a>
             </div>
           </div>
