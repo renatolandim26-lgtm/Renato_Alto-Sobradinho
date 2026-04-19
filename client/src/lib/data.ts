@@ -181,7 +181,8 @@ export const condominiumData = {
       developer: "",
       status: "",
       units: "Apartamentos",
-      bedrooms: "2 e 3 quartos"
+      bedrooms: "2 e 3 quartos",
+      image: "/images/total-ville-conviver.jpg"
     }
   ],
   contact: {

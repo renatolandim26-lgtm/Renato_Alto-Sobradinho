@@ -21,8 +21,16 @@ export default function OtherDevelopments() {
               className="card-corporate overflow-hidden hover:shadow-lg transition-all duration-300 group"
             >
               {/* Development Image Placeholder */}
-              <div className="h-32 sm:h-40 bg-gradient-to-br from-primary/10 to-secondary/20 flex items-center justify-center mb-4 group-hover:from-primary/20 group-hover:to-secondary/30 transition-colors">
-                <Home size={40} className="text-primary/40" />
+              <div className="h-32 sm:h-40 bg-gradient-to-br from-primary/10 to-secondary/20 flex items-center justify-center mb-4 group-hover:from-primary/20 group-hover:to-secondary/30 transition-colors overflow-hidden">
+                {dev.image ? (
+                  <img
+                    src={dev.image}
+                    alt={dev.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                ) : (
+                  <Home size={40} className="text-primary/40" />
+                )}
               </div>
 
               <h3 className="text-base sm:text-lg font-bold mb-3" style={{ fontFamily: "var(--font-display)" }}>
