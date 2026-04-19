@@ -157,7 +157,8 @@ export const condominiumData = {
       developer: "Casas",
       status: "",
       units: "",
-      bedrooms: "2 andares com quintal e varanda"
+      bedrooms: "2 andares com quintal e varanda",
+      image: "/images/recanto-canarios.jpg"
     },
     {
       id: 6,
