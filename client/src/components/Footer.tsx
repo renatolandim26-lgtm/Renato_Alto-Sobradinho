@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4">Sobre Nós</h4>
             <p className="text-sm text-sidebar-foreground/80 leading-relaxed">
-              Nosso objetivo é apresentar opções com boa localização, documentação analisada e potencial de valorização, oferecendo suporte em todo o processo para que você encontre o imóvel ideal com segurança e praticidade.
+              Nosso objetivo é apresentar opções com boa localização, conforto, lazer e potencial de valorização, oferecendo suporte em todo o processo para que você encontre o imóvel ideal com segurança e praticidade.
             </p>
           </div>
 
