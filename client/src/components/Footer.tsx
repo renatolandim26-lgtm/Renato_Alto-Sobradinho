@@ -18,7 +18,7 @@ export default function Footer() {
             <h4 className="font-bold mb-4">Redes Sociais</h4>
             <div className="space-y-3">
               <a
-                href="https://instagram.com/MAGNOS_EMPREENDIMENTOS"
+                href="https://instagram.com/solidusempreendimentos"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sidebar-foreground/80 hover:text-white transition-colors"
