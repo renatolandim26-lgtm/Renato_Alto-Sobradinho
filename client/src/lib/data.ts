@@ -138,7 +138,8 @@ export const condominiumData = {
       developer: "",
       status: "",
       units: "43.04m² até 50.62m²",
-      bedrooms: "2 quartos"
+      bedrooms: "2 quartos",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663564301672/wvbHWOAMpQVXvnmq.jpg"
     },
     {
       id: 4,
