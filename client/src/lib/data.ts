@@ -163,7 +163,8 @@ export const condominiumData = {
       developer: "",
       status: "",
       units: "",
-      bedrooms: "2 e 3 quartos"
+      bedrooms: "2 e 3 quartos",
+      image: "/images/reserva-parque-clube.jpg"
     },
     {
       id: 7,
