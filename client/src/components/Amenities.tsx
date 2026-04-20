@@ -36,9 +36,9 @@ const iconMap: Record<string, React.ReactNode> = {
 
 export default function Amenities() {
   return (
-    <section id="amenidades" className="py-20 bg-white">
+    <section id="amenidades" className="py-32 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12 sm:mb-16">
+        <div className="text-center mb-16 sm:mb-20">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "var(--font-display)" }}>
             Área de Lazer e Comodidade
           </h2>
@@ -47,19 +47,19 @@ export default function Amenities() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
           {condominiumData.main.amenities.map((amenity, index) => (
             <div
               key={index}
-              className="card-corporate text-center hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+              className="card-corporate text-center hover:shadow-xl rounded-2xl shadow-md transform hover:scale-105 transition-all duration-300 p-8"
             >
-              <div className="flex justify-center mb-3 text-primary">
+              <div className="flex justify-center mb-6 text-primary">
                 {iconMap[amenity.icon]}
               </div>
-              <h3 className="text-lg sm:text-xl font-bold mb-2 text-foreground">
+              <h3 className="text-xl sm:text-2xl font-bold mb-3 text-foreground">
                 {amenity.title}
               </h3>
-              <p className="text-muted-foreground text-xs sm:text-sm whitespace-pre-line">
+              <p className="text-muted-foreground text-sm sm:text-base whitespace-pre-line">
                 {amenity.description}
               </p>
             </div>
@@ -67,7 +67,7 @@ export default function Amenities() {
         </div>
 
         {/* Divider */}
-        <div className="my-12 sm:my-16 h-1 bg-gradient-to-r from-transparent via-border to-transparent"></div>
+        <div className="my-16 sm:my-20 h-1 bg-gradient-to-r from-transparent via-border to-transparent"></div>
       </div>
     </section>
   );

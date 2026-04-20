@@ -3,9 +3,9 @@ import { condominiumData } from "@/lib/data";
 
 export default function OtherDevelopments() {
   return (
-    <section id="empreendimentos" className="py-20 bg-white">
+    <section id="empreendimentos" className="py-32 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12 sm:mb-16">
+        <div className="text-center mb-16 sm:mb-20">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "var(--font-display)" }}>
             Outros Empreendimentos
           </h2>
@@ -14,14 +14,14 @@ export default function OtherDevelopments() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
           {condominiumData.otherDevelopments.map((dev) => (
             <div
               key={dev.id}
-              className="card-corporate overflow-hidden hover:shadow-lg transition-all duration-300 group"
+              className="card-corporate overflow-hidden hover:shadow-xl rounded-2xl shadow-md transition-all duration-300 group p-6"
             >
               {/* Development Image Placeholder */}
-              <div className="h-32 sm:h-40 bg-gradient-to-br from-primary/10 to-secondary/20 flex items-center justify-center mb-4 group-hover:from-primary/20 group-hover:to-secondary/30 transition-colors overflow-hidden">
+              <div className="h-40 sm:h-48 bg-gradient-to-br from-primary/10 to-secondary/20 flex items-center justify-center mb-6 group-hover:from-primary/20 group-hover:to-secondary/30 transition-colors overflow-hidden rounded-xl">
                 {dev.image ? (
                   <img
                     src={dev.image}
@@ -33,11 +33,11 @@ export default function OtherDevelopments() {
                 )}
               </div>
 
-              <h3 className="text-base sm:text-lg font-bold mb-3" style={{ fontFamily: "var(--font-display)" }}>
+              <h3 className="text-lg sm:text-xl font-bold mb-4" style={{ fontFamily: "var(--font-display)" }}>
                 {dev.name}
               </h3>
 
-              <div className="space-y-1.5 sm:space-y-2 mb-4 text-xs sm:text-sm">
+              <div className="space-y-2 sm:space-y-3 mb-6 text-xs sm:text-sm">
                 <div className="flex items-start gap-2 text-muted-foreground">
                   <MapPin size={16} className="text-primary flex-shrink-0 mt-0.5" />
                   <span>{dev.location}</span>
