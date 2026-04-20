@@ -103,19 +103,6 @@ export default function ContactSection() {
                   {/* Contact Info */}
                   <div className="space-y-6">
                     <a
-                      href={`tel:${contact.main.phone}`}
-                      className="flex items-start gap-4 group"
-                    >
-                      <div className="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/10 transition-colors">
-                        <Phone size={18} className="text-primary/70" />
-                      </div>
-                      <div>
-                        <p className="text-xs text-foreground/50 uppercase tracking-wider font-medium mb-1">Telefone</p>
-                        <p className="text-base font-medium text-foreground hover:text-primary transition-colors">{contact.main.formattedPhone}</p>
-                      </div>
-                    </a>
-                    
-                    <a
                       href="https://wa.me/556199886578?text=Olá%20Renato,%20gostaria%20de%20mais%20informações%20sobre%20os%20empreendimentos"
                       target="_blank"
                       rel="noopener noreferrer"
