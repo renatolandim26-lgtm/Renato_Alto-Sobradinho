@@ -1,4 +1,4 @@
-import { Phone, Mail } from "lucide-react";
+import { Phone, User } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -84,47 +84,44 @@ export default function ContactSection() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
             {/* Consultor Info - Premium */}
             <div className="lg:col-span-2">
-              <div className="border border-slate-200 rounded-xl p-8 bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
-                {/* Header */}
-                <div className="mb-8 pb-8 border-b border-slate-100">
-                  <h3 className="text-2xl font-light text-foreground mb-1">{contact.main.name}</h3>
-                  <p className="text-sm text-foreground/50 font-medium tracking-wide">CONSULTOR IMOBILIÁRIO</p>
+              <div className="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
+                {/* Photo Placeholder */}
+                <div className="w-full h-56 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center border-b border-slate-200">
+                  <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center border-2 border-primary/20">
+                    <User size={48} className="text-primary/40" />
+                  </div>
                 </div>
 
-                {/* Contact Info */}
-                <div className="space-y-6">
-                  <a
-                    href={`tel:${contact.main.phone}`}
-                    className="flex items-start gap-4 group"
-                  >
-                    <div className="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/10 transition-colors">
-                      <Phone size={18} className="text-primary/70" />
-                    </div>
-                    <div>
-                      <p className="text-xs text-foreground/50 uppercase tracking-wider font-medium mb-1">Telefone</p>
-                      <p className="text-base font-medium text-foreground hover:text-primary transition-colors">{contact.main.formattedPhone}</p>
-                    </div>
-                  </a>
+                {/* Content */}
+                <div className="p-8">
+                  {/* Header */}
+                  <div className="mb-8 pb-8 border-b border-slate-100">
+                    <h3 className="text-2xl font-light text-foreground mb-1">{contact.main.name}</h3>
+                    <p className="text-sm text-foreground/50 font-medium tracking-wide">CONSULTOR IMOBILIÁRIO</p>
+                  </div>
 
-                  <a
-                    href={`mailto:contato@magnos.com.br`}
-                    className="flex items-start gap-4 group"
-                  >
-                    <div className="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/10 transition-colors">
-                      <Mail size={18} className="text-primary/70" />
-                    </div>
-                    <div>
-                      <p className="text-xs text-foreground/50 uppercase tracking-wider font-medium mb-1">E-mail</p>
-                      <p className="text-base font-medium text-foreground hover:text-primary transition-colors">contato@magnos.com.br</p>
-                    </div>
-                  </a>
-                </div>
+                  {/* Contact Info */}
+                  <div className="space-y-6">
+                    <a
+                      href={`tel:${contact.main.phone}`}
+                      className="flex items-start gap-4 group"
+                    >
+                      <div className="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/10 transition-colors">
+                        <Phone size={18} className="text-primary/70" />
+                      </div>
+                      <div>
+                        <p className="text-xs text-foreground/50 uppercase tracking-wider font-medium mb-1">Telefone</p>
+                        <p className="text-base font-medium text-foreground hover:text-primary transition-colors">{contact.main.formattedPhone}</p>
+                      </div>
+                    </a>
+                  </div>
 
-                {/* Quote */}
-                <div className="mt-8 pt-8 border-t border-slate-100">
-                  <p className="text-sm text-foreground/70 italic leading-relaxed">
-                    "Meu compromisso é ajudá-lo a encontrar o investimento imobiliário perfeito para sua vida."
-                  </p>
+                  {/* Quote */}
+                  <div className="mt-8 pt-8 border-t border-slate-100">
+                    <p className="text-sm text-foreground/70 italic leading-relaxed">
+                      "Meu compromisso é ajudá-lo a encontrar o investimento imobiliário perfeito para sua vida."
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
