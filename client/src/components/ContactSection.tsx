@@ -1,4 +1,4 @@
-import { MessageCircle, Phone } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -29,8 +29,6 @@ export default function ContactSection() {
     "Ceilândia",
     "Taguatinga"
   ];
-
-  const whatsappUrl = `https://wa.me/${contact.main.phone}?text=${encodeURIComponent(contact.main.defaultMessage)}`;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -68,134 +66,162 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contato" className="py-20 bg-white border-t border-primary/5">
+    <section id="contato" className="py-28 bg-gradient-to-b from-white to-slate-50">
       <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 text-primary" style={{ fontFamily: "var(--font-display)" }}>
+          <div className="text-center mb-20">
+            <p className="text-sm font-semibold text-primary/60 uppercase tracking-widest mb-3">Entre em Contato</p>
+            <h2 className="text-4xl md:text-5xl font-light mb-4 text-foreground" style={{ fontFamily: "var(--font-display)" }}>
               Fale com nosso consultor
             </h2>
-            <p className="text-base text-muted-foreground max-w-2xl mx-auto">
-              Entre em contato para conhecer melhor o Alto Sobradinho e receber informações personalizadas.
+            <p className="text-base text-foreground/60 max-w-2xl mx-auto leading-relaxed">
+              Estamos à disposição para esclarecer dúvidas e apresentar as melhores oportunidades de investimento no Alto Sobradinho.
             </p>
           </div>
 
           {/* Content Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-            {/* Consultor Info - Compacto */}
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
+            {/* Consultor Info - Premium */}
             <div className="lg:col-span-2">
-              <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl p-6 border border-primary/10">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white flex-shrink-0">
-                    <span className="text-2xl font-bold">{contact.main.name.charAt(0)}</span>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-foreground">{contact.main.name}</h3>
-                    <p className="text-sm text-muted-foreground">Consultor Imobiliário</p>
-                  </div>
+              <div className="border border-slate-200 rounded-xl p-8 bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
+                {/* Header */}
+                <div className="mb-8 pb-8 border-b border-slate-100">
+                  <h3 className="text-2xl font-light text-foreground mb-1">{contact.main.name}</h3>
+                  <p className="text-sm text-foreground/50 font-medium tracking-wide">CONSULTOR IMOBILIÁRIO</p>
                 </div>
 
-                <div className="space-y-3 mb-6">
+                {/* Contact Info */}
+                <div className="space-y-6">
                   <a
                     href={`tel:${contact.main.phone}`}
-                    className="flex items-center gap-3 text-sm text-foreground hover:text-primary transition-colors"
+                    className="flex items-start gap-4 group"
                   >
-                    <Phone size={16} className="text-primary flex-shrink-0" />
-                    <span>{contact.main.formattedPhone}</span>
+                    <div className="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/10 transition-colors">
+                      <Phone size={18} className="text-primary/70" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-foreground/50 uppercase tracking-wider font-medium mb-1">Telefone</p>
+                      <p className="text-base font-medium text-foreground hover:text-primary transition-colors">{contact.main.formattedPhone}</p>
+                    </div>
+                  </a>
+
+                  <a
+                    href={`mailto:contato@magnos.com.br`}
+                    className="flex items-start gap-4 group"
+                  >
+                    <div className="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/10 transition-colors">
+                      <Mail size={18} className="text-primary/70" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-foreground/50 uppercase tracking-wider font-medium mb-1">E-mail</p>
+                      <p className="text-base font-medium text-foreground hover:text-primary transition-colors">contato@magnos.com.br</p>
+                    </div>
                   </a>
                 </div>
 
-                <a
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 px-4 py-3 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-lg font-semibold transition-all text-sm w-full"
-                >
-                  <MessageCircle size={16} />
-                  WhatsApp
-                </a>
+                {/* Quote */}
+                <div className="mt-8 pt-8 border-t border-slate-100">
+                  <p className="text-sm text-foreground/70 italic leading-relaxed">
+                    "Meu compromisso é ajudá-lo a encontrar o investimento imobiliário perfeito para sua vida."
+                  </p>
+                </div>
               </div>
             </div>
 
-            {/* Formulário - Minimalista */}
+            {/* Formulário - Premium */}
             <div className="lg:col-span-3">
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <Input
-                      type="text"
-                      placeholder="Nome"
-                      value={formData.firstName}
-                      onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                      required
-                      className="h-10 border-b border-primary/20 bg-transparent focus:border-primary rounded-none px-0 py-2 text-sm"
-                    />
+              <div className="border border-slate-200 rounded-xl p-8 bg-white shadow-sm">
+                <h3 className="text-xl font-light text-foreground mb-2">Solicitar Informações</h3>
+                <p className="text-sm text-foreground/60 mb-8">Preencha os dados abaixo para receber mais informações sobre o empreendimento.</p>
+                
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  {/* Nome e Sobrenome */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label className="text-xs font-medium text-foreground/70 uppercase tracking-wider">Nome</label>
+                      <Input
+                        type="text"
+                        placeholder="Seu nome"
+                        value={formData.firstName}
+                        onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                        required
+                        className="h-11 border-b border-slate-300 bg-transparent focus:border-primary rounded-none px-0 py-2 text-sm placeholder:text-foreground/30 focus:outline-none focus:ring-0 transition-colors"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-xs font-medium text-foreground/70 uppercase tracking-wider">Sobrenome</label>
+                      <Input
+                        type="text"
+                        placeholder="Seu sobrenome"
+                        value={formData.lastName}
+                        onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                        required
+                        className="h-11 border-b border-slate-300 bg-transparent focus:border-primary rounded-none px-0 py-2 text-sm placeholder:text-foreground/30 focus:outline-none focus:ring-0 transition-colors"
+                      />
+                    </div>
                   </div>
-                  <div>
-                    <Input
-                      type="text"
-                      placeholder="Sobrenome"
-                      value={formData.lastName}
-                      onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                      required
-                      className="h-10 border-b border-primary/20 bg-transparent focus:border-primary rounded-none px-0 py-2 text-sm"
-                    />
+
+                  {/* Email e Telefone */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label className="text-xs font-medium text-foreground/70 uppercase tracking-wider">E-mail</label>
+                      <Input
+                        type="email"
+                        placeholder="seu@email.com"
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        required
+                        className="h-11 border-b border-slate-300 bg-transparent focus:border-primary rounded-none px-0 py-2 text-sm placeholder:text-foreground/30 focus:outline-none focus:ring-0 transition-colors"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-xs font-medium text-foreground/70 uppercase tracking-wider">Telefone</label>
+                      <Input
+                        type="tel"
+                        placeholder="(61) 9 9999-9999"
+                        value={formData.phone}
+                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        required
+                        className="h-11 border-b border-slate-300 bg-transparent focus:border-primary rounded-none px-0 py-2 text-sm placeholder:text-foreground/30 focus:outline-none focus:ring-0 transition-colors"
+                      />
+                    </div>
                   </div>
-                </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <Input
-                      type="email"
-                      placeholder="E-mail"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      required
-                      className="h-10 border-b border-primary/20 bg-transparent focus:border-primary rounded-none px-0 py-2 text-sm"
-                    />
+                  {/* Região */}
+                  <div className="space-y-2">
+                    <label className="text-xs font-medium text-foreground/70 uppercase tracking-wider">Região de Interesse</label>
+                    <Select value={formData.region} onValueChange={(value) => setFormData({ ...formData, region: value })}>
+                      <SelectTrigger className="h-11 border-b border-slate-300 bg-transparent focus:border-primary rounded-none px-0 py-2 text-sm placeholder:text-foreground/30 focus:outline-none focus:ring-0 transition-colors">
+                        <SelectValue placeholder="Selecione uma região" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {regions.map((region) => (
+                          <SelectItem key={region} value={region}>
+                            {region}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
                   </div>
-                  <div>
-                    <Input
-                      type="tel"
-                      placeholder="WhatsApp"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      required
-                      className="h-10 border-b border-primary/20 bg-transparent focus:border-primary rounded-none px-0 py-2 text-sm"
-                    />
+
+                  {/* Botão */}
+                  <div className="pt-4">
+                    <Button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="w-full h-11 bg-primary hover:bg-primary/90 text-white text-sm font-medium rounded-lg transition-all duration-300 shadow-sm hover:shadow-md"
+                    >
+                      {isSubmitting ? "Enviando..." : "Enviar Solicitação"}
+                    </Button>
                   </div>
-                </div>
 
-                <div>
-                  <Select value={formData.region} onValueChange={(value) => setFormData({ ...formData, region: value })}>
-                    <SelectTrigger className="h-10 border-b border-primary/20 bg-transparent focus:border-primary rounded-none px-0 py-2 text-sm">
-                      <SelectValue placeholder="Região de interesse" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {regions.map((region) => (
-                        <SelectItem key={region} value={region}>
-                          {region}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </div>
-
-                <div className="pt-2">
-                  <Button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full h-10 bg-primary hover:bg-primary/90 text-white text-sm font-semibold rounded-lg transition-all"
-                  >
-                    {isSubmitting ? "Enviando..." : "Enviar"}
-                  </Button>
-                </div>
-
-                <p className="text-[11px] text-center text-muted-foreground">
-                  Ao enviar, você concorda com nossa Política de Privacidade.
-                </p>
-              </form>
+                  {/* Disclaimer */}
+                  <p className="text-xs text-foreground/50 text-center pt-2">
+                    Ao enviar este formulário, você concorda com nossa Política de Privacidade.
+                  </p>
+                </form>
+              </div>
             </div>
           </div>
         </div>
