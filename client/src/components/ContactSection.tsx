@@ -1,4 +1,4 @@
-import { Phone, User } from "lucide-react";
+import { Phone, User, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -112,6 +112,21 @@ export default function ContactSection() {
                       <div>
                         <p className="text-xs text-foreground/50 uppercase tracking-wider font-medium mb-1">Telefone</p>
                         <p className="text-base font-medium text-foreground hover:text-primary transition-colors">{contact.main.formattedPhone}</p>
+                      </div>
+                    </a>
+                    
+                    <a
+                      href="https://wa.me/556199886578?text=Olá%20Renato,%20gostaria%20de%20mais%20informações%20sobre%20os%20empreendimentos"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start gap-4 group"
+                    >
+                      <div className="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-green-500/20 transition-colors">
+                        <MessageCircle size={18} className="text-green-600" />
+                      </div>
+                      <div>
+                        <p className="text-xs text-foreground/50 uppercase tracking-wider font-medium mb-1">WhatsApp</p>
+                        <p className="text-base font-medium text-foreground hover:text-green-600 transition-colors">(61) 99988-6578</p>
                       </div>
                     </a>
                   </div>
