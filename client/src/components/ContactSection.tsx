@@ -10,7 +10,6 @@ export default function ContactSection() {
   const { contact } = condominiumData;
   const [formData, setFormData] = useState({
     firstName: "",
-    lastName: "",
     email: "",
     phone: "",
     region: ""
@@ -52,7 +51,7 @@ export default function ContactSection() {
 
       if (response.ok) {
         toast.success("Cadastro realizado com sucesso! Entraremos em contato em breve.");
-        setFormData({ firstName: "", lastName: "", email: "", phone: "", region: "" });
+        setFormData({ firstName: "", email: "", phone: "", region: "" });
       } else {
         const result = await response.json();
         toast.error(result.error || "Erro ao enviar o formulário. Tente novamente.");
@@ -131,37 +130,24 @@ export default function ContactSection() {
             {/* Formulário - Premium */}
             <div className="lg:col-span-3">
               <div className="border border-slate-200 rounded-xl p-8 bg-white shadow-sm">
-                <h3 className="text-xl font-light text-foreground mb-2">Solicitar Informações</h3>
-                <p className="text-sm text-foreground/60 mb-8">Preencha os dados abaixo para receber mais informações sobre o empreendimento.</p>
+                <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">Solicite atendimento personalizado</h3>
+                <p className="text-base text-foreground/60 mb-10">Preencha os dados abaixo e receba as melhores opções de investimento.</p>
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  {/* Nome e Sobrenome */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className="text-xs font-medium text-foreground/70 uppercase tracking-wider">Nome</label>
-                      <Input
-                        type="text"
-                        placeholder="Seu nome"
-                        value={formData.firstName}
-                        onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                        required
-                        className="h-11 border-b border-slate-300 bg-transparent focus:border-primary rounded-none px-0 py-2 text-sm placeholder:text-foreground/30 focus:outline-none focus:ring-0 transition-colors"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <label className="text-xs font-medium text-foreground/70 uppercase tracking-wider">Sobrenome</label>
-                      <Input
-                        type="text"
-                        placeholder="Seu sobrenome"
-                        value={formData.lastName}
-                        onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                        required
-                        className="h-11 border-b border-slate-300 bg-transparent focus:border-primary rounded-none px-0 py-2 text-sm placeholder:text-foreground/30 focus:outline-none focus:ring-0 transition-colors"
-                      />
-                    </div>
+                  {/* Nome */}
+                  <div className="space-y-2">
+                    <label className="text-xs font-medium text-foreground/70 uppercase tracking-wider">Nome</label>
+                    <Input
+                      type="text"
+                      placeholder="Seu nome completo"
+                      value={formData.firstName}
+                      onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                      required
+                      className="h-12 border-b border-slate-300 bg-transparent focus:border-primary rounded-none px-0 py-2 text-base placeholder:text-foreground/30 focus:outline-none focus:ring-0 transition-colors"
+                    />
                   </div>
 
-                  {/* Email e Telefone */}
+                  {/* Email e WhatsApp */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label className="text-xs font-medium text-foreground/70 uppercase tracking-wider">E-mail</label>
@@ -171,18 +157,18 @@ export default function ContactSection() {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         required
-                        className="h-11 border-b border-slate-300 bg-transparent focus:border-primary rounded-none px-0 py-2 text-sm placeholder:text-foreground/30 focus:outline-none focus:ring-0 transition-colors"
+                        className="h-12 border-b border-slate-300 bg-transparent focus:border-primary rounded-none px-0 py-2 text-base placeholder:text-foreground/30 focus:outline-none focus:ring-0 transition-colors"
                       />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-xs font-medium text-foreground/70 uppercase tracking-wider">Telefone</label>
+                      <label className="text-xs font-medium text-foreground/70 uppercase tracking-wider">WhatsApp</label>
                       <Input
                         type="tel"
                         placeholder="(61) 9 9999-9999"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         required
-                        className="h-11 border-b border-slate-300 bg-transparent focus:border-primary rounded-none px-0 py-2 text-sm placeholder:text-foreground/30 focus:outline-none focus:ring-0 transition-colors"
+                        className="h-12 border-b border-slate-300 bg-transparent focus:border-primary rounded-none px-0 py-2 text-base placeholder:text-foreground/30 focus:outline-none focus:ring-0 transition-colors"
                       />
                     </div>
                   </div>
@@ -191,7 +177,7 @@ export default function ContactSection() {
                   <div className="space-y-2">
                     <label className="text-xs font-medium text-foreground/70 uppercase tracking-wider">Região de Interesse</label>
                     <Select value={formData.region} onValueChange={(value) => setFormData({ ...formData, region: value })}>
-                      <SelectTrigger className="h-11 border-b border-slate-300 bg-transparent focus:border-primary rounded-none px-0 py-2 text-sm placeholder:text-foreground/30 focus:outline-none focus:ring-0 transition-colors">
+                      <SelectTrigger className="h-12 border-b border-slate-300 bg-transparent focus:border-primary rounded-none px-0 py-2 text-base placeholder:text-foreground/30 focus:outline-none focus:ring-0 transition-colors">
                         <SelectValue placeholder="Selecione uma região" />
                       </SelectTrigger>
                       <SelectContent>
@@ -211,7 +197,7 @@ export default function ContactSection() {
                       disabled={isSubmitting}
                       className="w-full h-14 sm:h-11 bg-primary hover:bg-primary/90 text-white text-base sm:text-sm font-medium rounded-xl transition-all duration-300 shadow-sm hover:shadow-md"
                     >
-                      {isSubmitting ? "Enviando..." : "Enviar Solicitação"}
+                      {isSubmitting ? "Enviando..." : "Quero receber opções"}
                     </Button>
                   </div>
 
