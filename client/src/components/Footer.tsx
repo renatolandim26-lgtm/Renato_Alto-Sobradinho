@@ -1,16 +1,42 @@
-import { Instagram, Facebook } from "lucide-react";
+import { Instagram, Facebook, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="bg-sidebar text-sidebar-foreground py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          {/* Sobre o Grupo */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          {/* Sobre Nós */}
           <div>
-            <h4 className="font-bold mb-4">Sobre Nós</h4>
+            <h4 className="font-bold mb-4">Solidus Empreendimentos</h4>
             <p className="text-sm text-sidebar-foreground/80 leading-relaxed">
-              Nosso objetivo é apresentar opções com boa localização, conforto, lazer e potencial de valorização, oferecendo suporte em todo o processo para que você encontre o imóvel ideal com segurança e praticidade.
+              Especialistas em imóveis com conforto, localização privilegiada e alto potencial de valorização.
             </p>
+            <p className="text-sm text-sidebar-foreground/80 leading-relaxed mt-4">
+              Conectamos você às melhores oportunidades imobiliárias em Brasília, com atendimento personalizado e segurança em cada etapa.
+            </p>
+          </div>
+
+          {/* Endereço e Contato */}
+          <div>
+            <h4 className="font-bold mb-4">Contato</h4>
+            <div className="space-y-3">
+              <a
+                href="https://maps.google.com/?q=Brasília,DF"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sidebar-foreground/80 hover:text-white transition-colors"
+              >
+                <MapPin size={20} />
+                Brasília – DF
+              </a>
+              <a
+                href="tel:+556199886578"
+                className="flex items-center gap-2 text-sidebar-foreground/80 hover:text-white transition-colors"
+              >
+                <Phone size={20} />
+                (61) 99988-6578
+              </a>
+            </div>
           </div>
 
           {/* Redes Sociais */}
@@ -38,10 +64,31 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Copyright */}
-          <div className="text-sm text-sidebar-foreground/60">
-            <p>© 2026 Sólidus. Todos os direitos reservados.</p>
+          {/* Links Rápidos */}
+          <div>
+            <h4 className="font-bold mb-4">Links Rápidos</h4>
+            <div className="space-y-2 text-sm">
+              <a href="#" className="block text-sidebar-foreground/80 hover:text-white transition-colors">
+                Início
+              </a>
+              <a href="#" className="block text-sidebar-foreground/80 hover:text-white transition-colors">
+                Imóveis
+              </a>
+              <a href="#" className="block text-sidebar-foreground/80 hover:text-white transition-colors">
+                Sobre
+              </a>
+              <a href="#" className="block text-sidebar-foreground/80 hover:text-white transition-colors">
+                Contato
+              </a>
+            </div>
           </div>
+        </div>
+
+        {/* Divisor */}
+        <div className="border-t border-sidebar-foreground/20 pt-8">
+          <p className="text-sm text-sidebar-foreground/60 text-center">
+            © 2026 Solidus Empreendimentos — Todos os direitos reservados.
+          </p>
         </div>
       </div>
     </footer>
