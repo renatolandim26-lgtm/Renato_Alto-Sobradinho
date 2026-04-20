@@ -24,13 +24,13 @@ export default function Units() {
               className="card-corporate overflow-hidden hover:shadow-xl rounded-2xl shadow-md transition-all duration-300 p-8"
             >
               {/* Unit Image */}
-              <div className="h-48 overflow-hidden rounded-xl mb-8 flex items-center justify-center bg-muted">
-                {unit.image && unit.image !== "" ? (
+              <div className="h-48 overflow-hidden rounded-xl mb-8 flex items-center justify-center bg-muted">                {unit.image && unit.image !== "" ? (
                   <img 
                     src={unit.image} 
                     alt={unit.name} 
+                    loading="lazy"
                     className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
-                  />
+                  />>
                 ) : (
                   <div className="text-center">
                     <Maximize2 size={48} className="text-primary/50 mx-auto mb-2" />

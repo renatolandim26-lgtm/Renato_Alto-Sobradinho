@@ -21,13 +21,13 @@ export default function OtherDevelopments() {
               className="card-corporate overflow-hidden hover:shadow-xl rounded-2xl shadow-md transition-all duration-300 group p-6"
             >
               {/* Development Image Placeholder */}
-              <div className="h-40 sm:h-48 bg-gradient-to-br from-primary/10 to-secondary/20 flex items-center justify-center mb-6 group-hover:from-primary/20 group-hover:to-secondary/30 transition-colors overflow-hidden rounded-xl">
-                {dev.image ? (
+              <div className="h-40 sm:h-48 bg-gradient-to-br from-primary/10 to-secondary/20 flex items-center justify-center mb-6 group-hover:from-primary/20 group-hover:to-secondary/30 transition-colors overflow-hidden rounded-xl">                {dev.image ? (
                   <img
                     src={dev.image}
                     alt={dev.name}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+                  )/>
                 ) : (
                   <Home size={40} className="text-primary/40" />
                 )}

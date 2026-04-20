@@ -66,16 +66,16 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contato" className="py-28 bg-gradient-to-b from-white to-slate-50">
+    <section id="contato" className="py-32 bg-gradient-to-b from-white to-slate-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-20">
-            <p className="text-sm font-semibold text-primary/60 uppercase tracking-widest mb-3">Entre em Contato</p>
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-foreground" style={{ fontFamily: "var(--font-display)" }}>
+          <div className="text-center mb-24">
+            <p className="text-base font-semibold text-primary/60 uppercase tracking-widest mb-4">Entre em Contato</p>
+            <h2 className="text-4xl sm:text-5xl md:text-5xl font-light mb-6 text-foreground" style={{ fontFamily: "var(--font-display)" }}>
               Fale com nosso consultor
             </h2>
-            <p className="text-base text-foreground/60 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-base text-foreground/60 max-w-2xl mx-auto leading-relaxed">
               Estamos à disposição para esclarecer dúvidas e apresentar as melhores oportunidades de investimento no Alto Sobradinho.
             </p>
           </div>
@@ -209,7 +209,7 @@ export default function ContactSection() {
                     <Button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full h-11 bg-primary hover:bg-primary/90 text-white text-sm font-medium rounded-lg transition-all duration-300 shadow-sm hover:shadow-md"
+                      className="w-full h-14 sm:h-11 bg-primary hover:bg-primary/90 text-white text-base sm:text-sm font-medium rounded-xl transition-all duration-300 shadow-sm hover:shadow-md"
                     >
                       {isSubmitting ? "Enviando..." : "Enviar Solicitação"}
                     </Button>

@@ -59,7 +59,9 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-2000"
         style={{
           backgroundImage: `url('${currentSlideData.image}')`,
-          backgroundAttachment: "fixed"
+          backgroundAttachment: "fixed",
+          backgroundSize: "cover",
+          willChange: "background-image"
         }}
       >
         <div className="absolute inset-0 bg-black/40"></div>
@@ -75,12 +77,12 @@ export default function Hero() {
         </div>
       )}
 
-        <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold mb-4" style={{ fontFamily: "var(--font-display)" }}>
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6" style={{ fontFamily: "var(--font-display)" }}>
           {currentSlideData.title}
         </h1>
 
         {currentSlideData.description && (
-        <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-gray-200 max-w-2xl mx-auto">
+        <p className="text-lg sm:text-xl md:text-2xl mb-10 sm:mb-12 text-gray-200 max-w-2xl mx-auto">
           {currentSlideData.description}
         </p>
         )}
@@ -89,13 +91,13 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 px-2 sm:px-0 max-w-md mx-auto">
           <a
             href="#sobre"
-            className="px-6 sm:px-8 py-3 bg-white text-primary rounded-lg font-bold transition-all shadow-lg shadow-white/20 hover:shadow-white/30 hover:bg-white/95 flex items-center justify-center gap-2 text-sm sm:text-base active:scale-95 flex-1"
+            className="px-8 sm:px-8 py-4 sm:py-3 bg-white text-primary rounded-xl font-bold transition-all shadow-lg shadow-white/20 hover:shadow-white/30 hover:bg-white/95 flex items-center justify-center gap-2 text-base sm:text-base active:scale-95 flex-1"
           >
             Conhecer o Projeto
           </a>
           <a
             href="#contato"
-            className="px-6 sm:px-8 py-3 bg-primary/80 hover:bg-primary text-white rounded-lg font-semibold transition-all border border-white/20 backdrop-blur-sm flex items-center justify-center gap-2 text-sm sm:text-base active:scale-95 flex-1"
+            className="px-8 sm:px-8 py-4 sm:py-3 bg-primary/80 hover:bg-primary text-white rounded-xl font-semibold transition-all border border-white/20 backdrop-blur-sm flex items-center justify-center gap-2 text-base sm:text-base active:scale-95 flex-1"
           >
             <MessageCircle size={16} />
             Contato

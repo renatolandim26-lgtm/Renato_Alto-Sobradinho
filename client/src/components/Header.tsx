@@ -38,35 +38,29 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 absolute right-4 active:scale-90 transition-transform"
+            className="md:hidden p-3 absolute right-4 active:scale-90 transition-transform"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="md:hidden pb-4 border-t border-border space-y-1">
-            <a href="#sobre" className="block py-3 px-2 text-foreground hover:text-primary hover:bg-secondary/5 rounded transition-colors" onClick={() => setMobileMenuOpen(false)}>
+          <nav className="md:hidden pb-6 border-t border-border space-y-2">
+            <a href="#sobre" className="block py-4 px-4 text-base font-medium text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Sobre
             </a>
-            <a href="#galeria" className="block py-3 px-2 text-foreground hover:text-primary hover:bg-secondary/5 rounded transition-colors" onClick={() => setMobileMenuOpen(false)}>
-              Galeria
-            </a>
-            <a href="#amenidades" className="block py-3 px-2 text-foreground hover:text-primary hover:bg-secondary/5 rounded transition-colors" onClick={() => setMobileMenuOpen(false)}>
+            <a href="#amenidades" className="block py-4 px-4 text-base font-medium text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Lazer
             </a>
-            <a href="#plantas" className="block py-3 px-2 text-foreground hover:text-primary hover:bg-secondary/5 rounded transition-colors" onClick={() => setMobileMenuOpen(false)}>
+            <a href="#plantas" className="block py-4 px-4 text-base font-medium text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Plantas
             </a>
-            <a href="#localizacao" className="block py-3 px-2 text-foreground hover:text-primary hover:bg-secondary/5 rounded transition-colors" onClick={() => setMobileMenuOpen(false)}>
-              Localização
-            </a>
-            <a href="#empreendimentos" className="block py-3 px-2 text-foreground hover:text-primary hover:bg-secondary/5 rounded transition-colors" onClick={() => setMobileMenuOpen(false)}>
+            <a href="#empreendimentos" className="block py-4 px-4 text-base font-medium text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Empreendimentos
             </a>
-            <a href="#contato" className="block py-3 px-2 text-foreground hover:text-primary hover:bg-secondary/5 rounded transition-colors" onClick={() => setMobileMenuOpen(false)}>
+            <a href="#contato" className="block py-4 px-4 text-base font-medium text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Contato
             </a>
           </nav>
