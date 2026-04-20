@@ -10,6 +10,7 @@ export default function ContactSection() {
   const { contact } = condominiumData;
   const [formData, setFormData] = useState({
     firstName: "",
+    lastName: "",
     email: "",
     phone: "",
     region: ""
@@ -51,7 +52,7 @@ export default function ContactSection() {
 
       if (response.ok) {
         toast.success("Cadastro realizado com sucesso! Entraremos em contato em breve.");
-        setFormData({ firstName: "", email: "", phone: "", region: "" });
+        setFormData({ firstName: "", lastName: "", email: "", phone: "", region: "" });
       } else {
         const result = await response.json();
         toast.error(result.error || "Erro ao enviar o formulário. Tente novamente.");
@@ -134,17 +135,30 @@ export default function ContactSection() {
                 <p className="text-base text-foreground/60 mb-10">Preencha os dados abaixo e receba as melhores opções de investimento.</p>
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  {/* Nome */}
-                  <div className="space-y-2">
-                    <label className="text-xs font-medium text-foreground/70 uppercase tracking-wider">Nome</label>
-                    <Input
-                      type="text"
-                      placeholder="Seu nome completo"
-                      value={formData.firstName}
-                      onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                      required
-                      className="h-12 border-b border-slate-300 bg-transparent focus:border-primary rounded-none px-0 py-2 text-base placeholder:text-foreground/30 focus:outline-none focus:ring-0 transition-colors"
-                    />
+                  {/* Nome e Sobrenome */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label className="text-xs font-medium text-foreground/70 uppercase tracking-wider">Nome</label>
+                      <Input
+                        type="text"
+                        placeholder="Seu nome"
+                        value={formData.firstName}
+                        onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                        required
+                        className="h-12 border-b border-slate-300 bg-transparent focus:border-primary rounded-none px-0 py-2 text-base placeholder:text-foreground/30 focus:outline-none focus:ring-0 transition-colors"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-xs font-medium text-foreground/70 uppercase tracking-wider">Sobrenome</label>
+                      <Input
+                        type="text"
+                        placeholder="Seu sobrenome"
+                        value={formData.lastName}
+                        onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                        required
+                        className="h-12 border-b border-slate-300 bg-transparent focus:border-primary rounded-none px-0 py-2 text-base placeholder:text-foreground/30 focus:outline-none focus:ring-0 transition-colors"
+                      />
+                    </div>
                   </div>
 
                   {/* Email e WhatsApp */}
