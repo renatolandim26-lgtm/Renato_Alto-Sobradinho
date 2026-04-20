@@ -1,17 +1,62 @@
+import { Sparkles } from "lucide-react";
+
 export default function Introduction() {
   return (
-    <section id="sobre" className="py-16 bg-gradient-to-b from-white to-secondary/5">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center space-y-6">
-          <p className="text-lg md:text-xl leading-relaxed text-foreground" style={{ fontFamily: "var(--font-body)" }}>
-            Uma nova oportunidade de viver com conforto, segurança e qualidade de vida. Em uma localização incrível, com infraestrutura completa, o complexo Alto Sobradinho: com uma ampla variedade de lazer, serviços e a facilidade de financiamento bancário com a documentação completa.
-          </p>
-          <p className="text-lg md:text-xl leading-relaxed text-foreground" style={{ fontFamily: "var(--font-body)" }}>
-            Aqui você irá desfrutar de tudo o que está disponível desde a educação até as comodidades e serviços oferecidos.
-            <br />
-            <br />
-            Aproveite ao máximo a cultura, a gastronomia e a atmosfera singular de Brasilia
-          </p>
+    <section id="sobre" className="py-24 bg-gradient-to-b from-white via-secondary/3 to-white relative overflow-hidden">
+      {/* Decorative Elements */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Sparkles size={20} className="text-primary" />
+            <span className="text-sm font-semibold text-primary uppercase tracking-wider">Sobre o Empreendimento</span>
+            <Sparkles size={20} className="text-primary" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-foreground" style={{ fontFamily: "var(--font-display)" }}>
+            Qualidade de Vida e Sofisticação
+          </h2>
+          <div className="w-16 h-1 bg-gradient-to-r from-primary/0 via-primary to-primary/0 mx-auto"></div>
+        </div>
+
+        {/* Content */}
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12">
+            {/* Left Column - Text */}
+            <div className="space-y-6">
+              <p className="text-lg leading-relaxed text-foreground/90">
+                Uma nova oportunidade de viver com <span className="font-semibold text-primary">conforto, segurança e qualidade de vida</span>. Em uma localização incrível, com infraestrutura completa, o complexo Alto Sobradinho oferece uma ampla variedade de lazer, serviços e a facilidade de financiamento bancário com documentação completa.
+              </p>
+              <p className="text-lg leading-relaxed text-foreground/90">
+                Aqui você irá desfrutar de tudo o que está disponível desde a educação até as comodidades e serviços oferecidos, criando um ambiente perfeito para sua família.
+              </p>
+            </div>
+
+            {/* Right Column - Highlights */}
+            <div className="space-y-4">
+              <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-xl p-6 border border-primary/10">
+                <h3 className="font-bold text-primary mb-2">Localização Privilegiada</h3>
+                <p className="text-sm text-foreground/80">Acesso fácil a todas as principais áreas de Brasília, com infraestrutura completa e segurança 24h.</p>
+              </div>
+              <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-xl p-6 border border-primary/10">
+                <h3 className="font-bold text-primary mb-2">Lazer e Comodidade</h3>
+                <p className="text-sm text-foreground/80">Piscina, academia, quadra poliesportiva, salão de festas e muito mais para sua diversão.</p>
+              </div>
+              <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-xl p-6 border border-primary/10">
+                <h3 className="font-bold text-primary mb-2">Cultura e Gastronomia</h3>
+                <p className="text-sm text-foreground/80">Aproveite a atmosfera singular de Brasília, com suas opções de cultura, gastronomia e lazer.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Highlight */}
+          <div className="bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5 rounded-xl p-8 border border-primary/10 text-center">
+            <p className="text-lg md:text-xl font-semibold text-foreground">
+              O Alto Sobradinho é mais que um empreendimento — é um <span className="text-primary">estilo de vida</span> pensado para você e sua família.
+            </p>
+          </div>
         </div>
       </div>
     </section>

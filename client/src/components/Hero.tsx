@@ -86,19 +86,19 @@ export default function Hero() {
         )}
 
         {/* CTA Buttons */}
-        <div className="flex flex-col gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 px-2 sm:px-0">
-          <a
-            href="#contato"
-            className="px-6 sm:px-8 py-3 sm:py-4 bg-primary hover:bg-primary/90 text-white rounded-lg font-bold transition-all shadow-lg shadow-primary/20 flex items-center justify-center gap-2 text-sm sm:text-base active:scale-95"
-          >
-            <MessageCircle size={18} />
-            Solicitar Informações
-          </a>
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 px-2 sm:px-0 max-w-md mx-auto">
           <a
             href="#sobre"
-            className="px-6 sm:px-8 py-3 sm:py-4 bg-white/10 hover:bg-white/20 text-white rounded-lg font-semibold transition-all border border-white/30 backdrop-blur-sm text-sm sm:text-base active:scale-95"
+            className="px-6 sm:px-8 py-3 bg-white text-primary rounded-lg font-bold transition-all shadow-lg shadow-white/20 hover:shadow-white/30 hover:bg-white/95 flex items-center justify-center gap-2 text-sm sm:text-base active:scale-95 flex-1"
           >
             Conhecer o Projeto
+          </a>
+          <a
+            href="#contato"
+            className="px-6 sm:px-8 py-3 bg-primary/80 hover:bg-primary text-white rounded-lg font-semibold transition-all border border-white/20 backdrop-blur-sm flex items-center justify-center gap-2 text-sm sm:text-base active:scale-95 flex-1"
+          >
+            <MessageCircle size={16} />
+            Contato
           </a>
         </div>
 
