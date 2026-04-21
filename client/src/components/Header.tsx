@@ -1,21 +1,18 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { condominiumData } from "@/lib/data";
-import logoSolidusNew from "@assets/logo-solidus-new.png";
-
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
-    <header className="sticky top-0 z-50 bg-background border-b border-border shadow-soft">
+    <header className="sticky top-0 z-50 bg-[#FDFCF9] border-b border-border shadow-soft">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo - Canto esquerdo */}
           <div className="hidden lg:flex items-center">
             <img 
-              src={logoSolidusNew} 
+              src="/logo-solidus-final.png" 
               alt="Solidus Equipe Imobiliária" 
-              className="h-16 w-16 object-contain opacity-90 hover:opacity-100 transition-opacity"
+              className="h-16 w-16 object-contain opacity-100 hover:opacity-80 transition-opacity"
             />
           </div>
 
