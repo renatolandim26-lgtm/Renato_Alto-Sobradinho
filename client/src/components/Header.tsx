@@ -10,7 +10,7 @@ export default function Header() {
           {/* Logo - Canto esquerdo */}
           <div className="hidden lg:flex items-center">
             <img 
-              src="/logo-solidus-final.png" 
+              src="/images/logo-solidus-final.png" 
               alt="Solidus Equipe Imobiliária" 
               className="h-16 w-16 object-contain opacity-100 hover:opacity-80 transition-opacity"
             />
