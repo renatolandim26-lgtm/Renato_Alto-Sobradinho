@@ -16,7 +16,7 @@
   ],
   "rewrites": [
     {
-      "source": "/:path*",
+      "source": "/((?!api|images|assets|_next).*)",
       "destination": "/index.html"
     }
   ]
