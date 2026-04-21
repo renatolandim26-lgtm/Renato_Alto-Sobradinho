@@ -1,4 +1,5 @@
 import { Instagram, Facebook, MapPin, Phone } from "lucide-react";
+import logoSolidusNew from "@assets/logo-solidus-new.png";
 
 export default function Footer() {
   return (
@@ -86,9 +87,16 @@ export default function Footer() {
 
         {/* Divisor */}
         <div className="border-t border-sidebar-foreground/20 pt-8">
-          <p className="text-sm text-sidebar-foreground/60 text-center">
-            © 2026 Solidus Empreendimentos — Todos os direitos reservados.
-          </p>
+          <div className="flex items-center justify-between">
+            <p className="text-sm text-sidebar-foreground/60">
+              © 2026 Solidus Empreendimentos — Todos os direitos reservados.
+            </p>
+            <img 
+              src={logoSolidusNew} 
+              alt="Solidus" 
+              className="h-10 w-10 object-contain opacity-60 hover:opacity-80 transition-opacity"
+            />
+          </div>
         </div>
       </div>
     </footer>

@@ -43,40 +43,40 @@
 }
 
 :root {
-  /* Luxo Sofisticado - Dourado e Bege */
-  --primary: #B8860B; /* Dourado escuro */
+  /* Luxo Sofisticado - Inspirado na Logo Solidus */
+  --primary: #A68B5B; /* Bronze sofisticado */
   --primary-foreground: #FFFFFF;
-  --sidebar-primary: #8B7355; /* Bege escuro */
+  --sidebar-primary: #8B7355; /* Bronze envelhecido */
   --sidebar-primary-foreground: #FFFFFF;
-  --chart-1: #B8860B;
-  --chart-2: #D4AF37;
-  --chart-3: #DAA520;
-  --chart-4: #FFD700;
-  --chart-5: #F0E68C;
+  --chart-1: #A68B5B;
+  --chart-2: #D4C4A8;
+  --chart-3: #B8860B;
+  --chart-4: #D4AF37;
+  --chart-5: #E8D5C4;
   --radius: 0.5rem;
-  --background: #FEFEF8;
-  --foreground: #3E3E3E;
-  --card: #F5F3ED;
-  --card-foreground: #3E3E3E;
-  --popover: #FEFEF8;
-  --popover-foreground: #3E3E3E;
-  --secondary: #D4AF37; /* Dourado médio */
-  --secondary-foreground: #FFFFFF;
-  --muted: #E8E3D8;
-  --muted-foreground: #666666;
-  --accent: #B8860B;
+  --background: #FDFCF9; /* Mármore suave */
+  --foreground: #2D2926; /* Marrom escuro suave */
+  --card: #F9F7F3;
+  --card-foreground: #2D2926;
+  --popover: #FDFCF9;
+  --popover-foreground: #2D2926;
+  --secondary: #D4C4A8; /* Dourado claro inspirado no mármore */
+  --secondary-foreground: #2D2926;
+  --muted: #E8DFD3;
+  --muted-foreground: #6B6460;
+  --accent: #8B7355;
   --accent-foreground: #FFFFFF;
   --destructive: #DC2626;
   --destructive-foreground: #FFFFFF;
-  --border: #E8E3D8;
+  --border: #E8DFD3;
   --input: #FAFAF8;
-  --ring: #B8860B;
+  --ring: #A68B5B;
   --sidebar: #8B7355;
   --sidebar-foreground: #FFFFFF;
-  --sidebar-accent: #B8860B;
+  --sidebar-accent: #A68B5B;
   --sidebar-accent-foreground: #FFFFFF;
   --sidebar-border: #6B5344;
-  --sidebar-ring: #B8860B;
+  --sidebar-ring: #A68B5B;
   /* Tipografia */
   --font-display: 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
