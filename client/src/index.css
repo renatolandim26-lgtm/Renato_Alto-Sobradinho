@@ -83,8 +83,8 @@
 }
 
 .dark {
-  /* Tema escuro não será usado neste projeto */
-  --primary: #B8860B;
+  /* Tema escuro não será usado neste projeto, mas mantemos consistência */
+  --primary: #A68B5B;
   --primary-foreground: #FFFFFF;
   --sidebar-primary: #8B7355;
   --sidebar-primary-foreground: #FFFFFF;
@@ -94,23 +94,23 @@
   --card-foreground: #E0E0E0;
   --popover: #2A2A2A;
   --popover-foreground: #E0E0E0;
-  --secondary: #D4AF37;
+  --secondary: #A68B5B;
   --secondary-foreground: #FFFFFF;
   --muted: #404040;
   --muted-foreground: #999999;
-  --accent: #B8860B;
+  --accent: #A68B5B;
   --accent-foreground: #FFFFFF;
   --destructive: #FF6B6B;
   --destructive-foreground: #FFFFFF;
   --border: #404040;
   --input: #2A2A2A;
-  --ring: #B8860B;
+  --ring: #A68B5B;
   --sidebar: #1A1A1A;
   --sidebar-foreground: #E0E0E0;
-  --sidebar-accent: #B8860B;
+  --sidebar-accent: #A68B5B;
   --sidebar-accent-foreground: #FFFFFF;
   --sidebar-border: #333333;
-  --sidebar-ring: #B8860B;
+  --sidebar-ring: #A68B5B;
 }
 
 @layer base {
