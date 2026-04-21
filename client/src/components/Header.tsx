@@ -1,7 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { condominiumData } from "@/lib/data";
-import logoSolidus from "@/assets/logo-solidus.png";
+import logoSolidus from "@assets/logo-solidus.png";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
