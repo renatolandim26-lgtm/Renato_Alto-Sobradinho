@@ -30,7 +30,7 @@ export default function Units() {
                     alt={unit.name} 
                     loading="lazy"
                     className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
-                  />>
+                  />
                 ) : (
                   <div className="text-center">
                     <Maximize2 size={48} className="text-primary/50 mx-auto mb-2" />

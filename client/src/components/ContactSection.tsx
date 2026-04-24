@@ -103,7 +103,7 @@ export default function ContactSection() {
                   {/* Contact Info */}
                   <div className="space-y-6">
                     <a
-                      href="https://wa.me/556199886578?text=Olá%20Renato,%20gostaria%20de%20mais%20informações%20sobre%20os%20empreendimentos"
+                      href={`https://wa.me/${contact.main.phone}?text=${encodeURIComponent(contact.main.defaultMessage)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-start gap-4 group"
@@ -113,7 +113,7 @@ export default function ContactSection() {
                       </div>
                       <div>
                         <p className="text-xs text-foreground/50 uppercase tracking-wider font-medium mb-1">WhatsApp</p>
-                        <p className="text-base font-medium text-foreground hover:text-primary transition-colors">(61) 99988-6578</p>
+                        <p className="text-base font-medium text-foreground hover:text-primary transition-colors">{contact.main.formattedPhone}</p>
                       </div>
                     </a>
                   </div>

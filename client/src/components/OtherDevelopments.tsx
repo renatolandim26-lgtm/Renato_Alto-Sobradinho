@@ -27,7 +27,7 @@ export default function OtherDevelopments() {
                     alt={dev.name}
                     loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  )/>
+                  />
                 ) : (
                   <Home size={40} className="text-primary/40" />
                 )}

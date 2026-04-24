@@ -1,7 +1,9 @@
 import { Instagram, Facebook, MapPin, Phone } from "lucide-react";
 import logoSolidusNew from "@assets/logo-solidus-new.png";
+import { condominiumData } from "@/lib/data";
 
 export default function Footer() {
+  const { contact, main } = condominiumData;
   return (
     <footer className="bg-sidebar text-sidebar-foreground py-12">
       <div className="container mx-auto px-4">
@@ -13,7 +15,7 @@ export default function Footer() {
               Especialistas em imóveis com conforto, localização privilegiada e alto potencial de valorização.
             </p>
             <p className="text-sm text-sidebar-foreground/80 leading-relaxed mt-4">
-              Conectamos você às melhores oportunidades imobiliárias em Brasília, com atendimento personalizado e segurança em cada etapa.
+              Conectamos você às melhores oportunidades imobiliárias em {main.location}, com atendimento personalizado e segurança em cada etapa.
             </p>
           </div>
 
@@ -22,20 +24,20 @@ export default function Footer() {
             <h4 className="font-bold mb-4">Contato</h4>
             <div className="space-y-3">
               <a
-                href="https://maps.google.com/?q=Brasília,DF"
+                href={`https://maps.google.com/?q=${encodeURIComponent(main.location)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sidebar-foreground/80 hover:text-white transition-colors"
               >
                 <MapPin size={20} />
-                Brasília – DF
+                {main.location}
               </a>
               <a
-                href="tel:+556199886578"
+                href={`tel:+${contact.main.phone}`}
                 className="flex items-center gap-2 text-sidebar-foreground/80 hover:text-white transition-colors"
               >
                 <Phone size={20} />
-                (61) 99988-6578
+                {contact.main.formattedPhone}
               </a>
             </div>
           </div>
