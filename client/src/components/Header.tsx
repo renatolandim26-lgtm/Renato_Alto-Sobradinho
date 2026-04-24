@@ -12,7 +12,7 @@ export default function Header() {
             <img 
               src="/images/logo-solidus-final.png" 
               alt="Solidus Equipe Imobiliária" 
-              className="h-16 w-32 object-contain opacity-100 hover:opacity-80 transition-opacity"
+              className="h-14 w-14 object-contain hover:opacity-80 transition-opacity drop-shadow-md"
             />
           </div>
 
