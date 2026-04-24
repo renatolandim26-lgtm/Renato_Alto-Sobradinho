@@ -85,12 +85,14 @@ export default function ContactSection() {
             {/* Consultor Info - Premium */}
             <div className="lg:col-span-2">
               <div className="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
-                {/* Photo Placeholder */}
-                <div className="w-full h-56 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center border-b border-slate-200">
-                  <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center border-2 border-primary/20">
-                    <User size={48} className="text-primary/40" />
-                  </div>
-                </div>
+	                {/* Photo */}
+	                <div className="w-full h-64 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center border-b border-slate-200 overflow-hidden">
+	                  <img 
+	                    src="/images/renato-landim.png" 
+	                    alt={contact.main.name}
+	                    className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
+	                  />
+	                </div>
 
                 {/* Content */}
                 <div className="p-8">
