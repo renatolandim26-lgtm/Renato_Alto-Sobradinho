@@ -58,7 +58,7 @@ export default function Units() {
                 </div>
                 <div className="flex items-center gap-3 text-foreground">
                   <Trees size={18} className="text-primary flex-shrink-0" />
-                  <span>Suíte e {unit.name === "Cobertura" ? "Área Privativa" : "Garden"}</span>
+                  <span>Suíte {unit.name === "Cobertura" ? "e Área Privativa" : "ou Garden"}</span>
                 </div>
 
               </div>
