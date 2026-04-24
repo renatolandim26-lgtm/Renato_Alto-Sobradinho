@@ -51,7 +51,7 @@ export default function Units() {
                 <div className="flex items-center gap-3 text-foreground">
                   <ParkingCircle size={18} className="text-primary flex-shrink-0" />
                   <span>
-                    {unit.name === "2 Quartos" && "1 garagem vinculada"}
+                    {unit.name === "2 Quartos" && "até 2 vagas vinculadas"}
                     {unit.name === "3 Quartos" && "2 garagens vinculadas"}
                     {unit.name === "Cobertura" && "2 garagens vinculadas"}
                   </span>
