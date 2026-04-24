@@ -85,48 +85,52 @@ export default function ContactSection() {
             {/* Consultor Info - Premium */}
             <div className="lg:col-span-2">
               <div className="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
-				{/* Photo */}
-				<div className="w-full bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center py-12 border-b border-slate-200">
-				  <img 
-				    src="/images/renato-landim.png" 
-				    alt={contact.main.name}
-				    className="w-40 h-40 rounded-full object-cover object-top hover:scale-105 transition-transform duration-500 border-4 border-white shadow-md"
-				  />
-				</div>
+					{/* Photo */}
+					<div className="w-full flex items-center justify-center py-12">
+					  <img 
+					    src="/images/renato-landim.png" 
+					    alt={contact.main.name}
+					    className="w-56 h-56 rounded-full object-cover object-top border-4 border-black"
+					  />
+					</div>
 
-                {/* Content */}
-                <div className="p-8">
-                  {/* Header */}
-                  <div className="mb-8 pb-8 border-b border-slate-100">
-                    <h3 className="text-2xl font-light text-foreground mb-1">{contact.main.name}</h3>
-                    <p className="text-sm text-foreground/50 font-medium tracking-wide">CONSULTOR IMOBILIÁRIO</p>
-                  </div>
+	                {/* Content */}
+	                <div className="px-8 pb-12 text-center">
+	                  {/* Header */}
+	                  <div className="mb-8">
+	                    <h3 className="text-3xl font-serif text-foreground mb-2">{contact.main.name}</h3>
+	                    <p className="text-sm text-foreground font-bold tracking-widest uppercase">CONSULTOR IMOBILIÁRIO</p>
+	                  </div>
 
-                  {/* Contact Info */}
-                  <div className="space-y-6">
-                    <a
-                      href={`https://wa.me/${contact.main.phone}?text=${encodeURIComponent(contact.main.defaultMessage)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-start gap-4 group"
-                    >
-                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
-                        <MessageCircle size={18} className="text-primary" />
-                      </div>
-                      <div>
-                        <p className="text-xs text-foreground/50 uppercase tracking-wider font-medium mb-1">WhatsApp</p>
-                        <p className="text-base font-medium text-foreground hover:text-primary transition-colors">{contact.main.formattedPhone}</p>
-                      </div>
-                    </a>
-                  </div>
+                    <div className="w-full h-px bg-slate-200 mb-8"></div>
 
-                  {/* Quote */}
-                  <div className="mt-8 pt-8 border-t border-slate-100">
-                    <p className="text-sm text-foreground/70 italic leading-relaxed">
-                      "Meu compromisso é ajudá-lo a encontrar o investimento imobiliário perfeito para sua vida."
-                    </p>
-                  </div>
-                </div>
+	                  {/* Contact Info */}
+	                  <div className="flex justify-center mb-8">
+	                    <a
+	                      href={`https://wa.me/${contact.main.phone}?text=${encodeURIComponent(contact.main.defaultMessage)}`}
+	                      target="_blank"
+	                      rel="noopener noreferrer"
+	                      className="flex items-center gap-4 bg-slate-50 p-4 rounded-xl border border-slate-100 w-full max-w-xs"
+	                    >
+	                      <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm">
+	                        <MessageCircle size={24} className="text-green-600" />
+	                      </div>
+	                      <div className="text-left">
+	                        <p className="text-xs text-slate-500 uppercase font-bold">WhatsApp</p>
+	                        <p className="text-lg font-bold text-slate-900">{contact.main.formattedPhone}</p>
+	                      </div>
+	                    </a>
+	                  </div>
+
+                    <div className="w-full h-px bg-slate-200 mb-8"></div>
+
+	                  {/* Quote */}
+	                  <div className="px-4">
+	                    <p className="text-base text-slate-700 italic leading-relaxed font-medium">
+	                      "Meu compromisso é ajudá-lo a encontrar o investimento imobiliário perfeito para sua vida."
+	                    </p>
+	                  </div>
+	                </div>
               </div>
             </div>
 
