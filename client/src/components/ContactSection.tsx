@@ -85,14 +85,14 @@ export default function ContactSection() {
             {/* Consultor Info - Premium */}
             <div className="lg:col-span-2">
               <div className="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
-	                {/* Photo */}
-	                <div className="w-full h-64 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center border-b border-slate-200 overflow-hidden">
-	                  <img 
-	                    src="/images/renato-landim.png" 
-	                    alt={contact.main.name}
-	                    className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
-	                  />
-	                </div>
+				{/* Photo */}
+				<div className="w-full bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center py-12 border-b border-slate-200">
+				  <img 
+				    src="/images/renato-landim.png" 
+				    alt={contact.main.name}
+				    className="w-40 h-40 rounded-full object-cover object-top hover:scale-105 transition-transform duration-500 border-4 border-white shadow-md"
+				  />
+				</div>
 
                 {/* Content */}
                 <div className="p-8">
