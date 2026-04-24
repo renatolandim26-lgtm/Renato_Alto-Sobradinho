@@ -198,7 +198,7 @@ export const condominiumData = {
       role: "",
       phone: "5561999886578",
       formattedPhone: "(61) 9 9988-6578",
-      defaultMessage: "Olá Renato! Vi o site do Magnos e tenho interesse em conhecer o imóvel. Pode me passar mais informações?"
+      defaultMessage: "Olá Renato! Vi o site do Alto Sobradinho e tenho interesse em conhecer o imóvel. Pode me passar mais informações?"
     },
     david: {
       name: "David",
