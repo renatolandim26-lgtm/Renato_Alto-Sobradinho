@@ -73,7 +73,7 @@ export default function ContactSection() {
           <div className="text-center mb-24">
             <p className="text-base font-semibold text-primary/60 uppercase tracking-widest mb-4">Entre em Contato</p>
             <h2 className="text-4xl sm:text-5xl md:text-5xl font-light mb-6 text-foreground" style={{ fontFamily: "var(--font-display)" }}>
-              Fale com nosso consultor
+              Fale com seu consultor
             </h2>
             <p className="text-lg sm:text-base text-foreground/60 max-w-2xl mx-auto leading-relaxed">
               Estamos à disposição para esclarecer dúvidas e apresentar as melhores oportunidades de investimento no Alto Sobradinho.
