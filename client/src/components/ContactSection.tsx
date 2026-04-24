@@ -84,7 +84,19 @@ export default function ContactSection() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
             {/* Consultor Info - Premium */}
             <div className="lg:col-span-2">
-              <div className="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div className="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow duration-300 relative">
+                {/* Background Image */}
+                <div 
+                  className="absolute inset-0 opacity-20"
+                  style={{
+                    backgroundImage: 'url(/images/corretor-bg.jpg)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                  }}
+                ></div>
+
+                {/* Content Overlay */}
+                <div className="relative z-10">
 					{/* Photo */}
 					<div className="w-full flex items-center justify-center py-12">
 					  <img 
@@ -102,27 +114,22 @@ export default function ContactSection() {
 	                    <p className="text-sm text-foreground font-bold tracking-widest uppercase">CONSULTOR IMOBILIÁRIO</p>
 	                  </div>
 
-                    <div className="w-full h-px bg-slate-200 mb-8"></div>
+                    <div className="w-full h-px bg-slate-300 mb-8"></div>
 
-	                  {/* Contact Info */}
+	                  {/* Contact Info - WhatsApp Button */}
 	                  <div className="flex justify-center mb-8">
 	                    <a
 	                      href={`https://wa.me/${contact.main.phone}?text=${encodeURIComponent(contact.main.defaultMessage)}`}
 	                      target="_blank"
 	                      rel="noopener noreferrer"
-	                      className="flex items-center gap-4 bg-slate-50 p-4 rounded-xl border border-slate-100 w-full max-w-xs"
+	                      className="flex items-center justify-center gap-3 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg w-full max-w-xs"
 	                    >
-	                      <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm">
-	                        <MessageCircle size={24} className="text-green-600" />
-	                      </div>
-	                      <div className="text-left">
-	                        <p className="text-xs text-slate-500 uppercase font-bold">WhatsApp</p>
-	                        <p className="text-lg font-bold text-slate-900">{contact.main.formattedPhone}</p>
-	                      </div>
+	                      <MessageCircle size={20} />
+	                      <span>Abrir WhatsApp</span>
 	                    </a>
 	                  </div>
 
-                    <div className="w-full h-px bg-slate-200 mb-8"></div>
+                    <div className="w-full h-px bg-slate-300 mb-8"></div>
 
 	                  {/* Quote */}
 	                  <div className="px-4">
@@ -131,6 +138,7 @@ export default function ContactSection() {
 	                    </p>
 	                  </div>
 	                </div>
+                </div>
               </div>
             </div>
 
